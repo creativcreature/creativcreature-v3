@@ -116,6 +116,45 @@ export const caseStudies: CaseStudy[] = [
   }
 ]
 
+// PERSONAL AI ART GALLERY - FEATURED
+const personalArtEntry: CaseStudy = {
+  id: '3',
+  slug: 'ai-art-explorations',
+  title: 'AI Art Explorations',
+  client: 'Personal Work',
+  category: 'Generative Art',
+  year: '2018-2024',
+  tags: ['AI Art', 'Midjourney', 'Generative', 'Personal Expression'],
+  description: 'A collection of AI-generated artwork exploring themes of identity, culture, spirituality, and the African diaspora.',
+  heroImage: '/images/gallery/personal-art/035A430C-8FA7-4C9A-BC8D-057679C358BA.JPG',
+  thumbnail: '/images/gallery/personal-art/035A430C-8FA7-4C9A-BC8D-057679C358BA.JPG',
+  color: '#8b5cf6',
+  featured: true,
+  type: 'gallery',
+  overview: 'An ongoing exploration of AI as a creative medium. These works span years of experimentation with generative tools—from early Midjourney explorations to refined prompt engineering techniques. The collection celebrates Black culture, spirituality, and personal narrative.',
+  challenge: 'How do you use AI as a genuine creative tool rather than just a novelty? How do you develop a distinctive voice when the medium is accessible to everyone?',
+  approach: 'Treating AI as a collaborator, not a replacement. Each piece starts with intention—a concept, a feeling, a story to tell. The AI becomes a partner in realizing visions that would be impossible to execute alone.',
+  solution: 'A body of work that demonstrates AI creative direction—the human judgment, cultural context, and artistic vision that transforms prompts into meaningful art. Featured on Behance and LinkedIn.',
+  results: [
+    '2,700+ AI-generated artworks created',
+    'Featured on Behance portfolio',
+    'Explored themes of identity and diaspora',
+    'Developed refined AI creative workflow'
+  ],
+  gallery: [
+    '/images/gallery/personal-art/035A430C-8FA7-4C9A-BC8D-057679C358BA.JPG',
+    '/images/gallery/personal-art/037BCA5E-D294-4D56-A091-1AE8CCEA55A7.JPG',
+    '/images/gallery/personal-art/0412B5F4-B41E-4C28-9999-FEE197794567.jpg',
+    '/images/gallery/personal-art/04F2498E-2EF1-477B-AB1D-994EC79BA8E3.jpg',
+    '/images/gallery/personal-art/0509F924-E74F-43BD-B3E5-1E5F515B3B5B.jpg',
+    '/images/gallery/personal-art/0511E9FA-7230-499D-9C30-C46BC3AB4226.jpg',
+    '/images/gallery/personal-art/054BFF37-EBFA-44C9-B6F3-530D0E0C8C63.jpg',
+    '/images/gallery/personal-art/0619A3CD-8B3D-43E5-9A5A-9ACDBC691552.jpg'
+  ]
+}
+
+caseStudies.push(personalArtEntry)
+
 export const getFeaturedCaseStudies = (): CaseStudy[] => caseStudies.filter(cs => cs.featured)
 export const getCaseStudyBySlug = (slug: string): CaseStudy | undefined => caseStudies.find(cs => cs.slug === slug)
 export const getProjectCaseStudies = (): CaseStudy[] => caseStudies.filter(cs => cs.type === 'project')
