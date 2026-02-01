@@ -661,6 +661,331 @@ Deliverables included brand guidelines, website design, school program materials
       '/images/brands/portfolio-v4-images/digital-portraits/09-third-eye-vision.png',
       '/images/brands/portfolio-v4-images/digital-portraits/10-deer-spirit.png'
     ]
+  },
+
+  // ═══════════════════════════════════════════════════════════════
+  // CONCEPT BRANDS - FORTUNE 500 QUALITY DEMONSTRATION
+  // ═══════════════════════════════════════════════════════════════
+
+  // ATLAS PROTOCOL
+  {
+    id: '21',
+    slug: 'atlas-protocol',
+    title: 'Atlas Protocol',
+    client: 'Concept Brand',
+    category: 'Enterprise Brand Identity',
+    year: '2024',
+    tags: ['Brand Identity', 'Enterprise', 'AI/ML', 'Digital Product', 'Concept Work'],
+    description: 'A complete brand identity for an enterprise AI infrastructure company. Demonstrating Fortune 500-level brand development capabilities.',
+    heroImage: '/images/brands/portfolio-v4-images/atlas-protocol/website-hero.png',
+    thumbnail: '/images/brands/portfolio-v4-images/atlas-protocol/logo-primary.png',
+    color: '#0EA5E9',
+    featured: false,
+    type: 'project',
+    overview: `Atlas Protocol represents a concept brand developed to demonstrate enterprise-level brand identity capabilities. The fictional company provides AI infrastructure and machine learning operations tools for Fortune 500 companies.`,
+    challenge: `Enterprise AI companies often default to cold, technical aesthetics. The challenge: create a brand that feels cutting-edge and established, technical yet accessible.`,
+    approach: `Applied Fortune 500 brand development methodology: Strategic Positioning, Visual Identity System, Digital Product Design, Application Guidelines.`,
+    solution: `A cohesive brand identity balancing technical sophistication with approachable warmth. Deep blues and teals suggest depth and reliability.`,
+    results: [
+      'Complete enterprise brand identity system',
+      'Mobile app UI/UX design',
+      'Digital marketing collateral suite',
+      'Brand guidelines documentation'
+    ],
+    gallery: [
+      '/images/brands/portfolio-v4-images/atlas-protocol/logo-primary.png',
+      '/images/brands/portfolio-v4-images/atlas-protocol/logo-alt.png',
+      '/images/brands/portfolio-v4-images/atlas-protocol/color-palette.png',
+      '/images/brands/portfolio-v4-images/atlas-protocol/website-hero.png',
+      '/images/brands/portfolio-v4-images/atlas-protocol/mobile-app-screens.png',
+      '/images/brands/portfolio-v4-images/atlas-protocol/social-banner.png'
+    ]
+  },
+
+  // BLOOM COLLECTIVE
+  {
+    id: '22',
+    slug: 'bloom-collective',
+    title: 'Bloom Collective',
+    client: 'Concept Brand',
+    category: 'Luxury Brand Identity',
+    year: '2024',
+    tags: ['Brand Identity', 'Luxury', 'Fashion', 'Packaging', 'Concept Work'],
+    description: 'A premium lifestyle brand identity spanning fashion, beauty, and home.',
+    heroImage: '/images/brands/portfolio-v4-images/bloom-collective/campaign-photo.png',
+    thumbnail: '/images/brands/portfolio-v4-images/bloom-collective/logo-brandmark.png',
+    color: '#D946EF',
+    featured: false,
+    type: 'project',
+    overview: `Bloom Collective is a concept luxury lifestyle brand showcasing comprehensive brand identity work across fashion, beauty, and home goods.`,
+    challenge: `Luxury brands require exceptional attention to detail. Every touchpoint must reinforce premium positioning across diverse product categories.`,
+    approach: `Brand Architecture, Visual Language balancing minimalism with warmth, Material Considerations for premium finishes, Campaign Development.`,
+    solution: `A refined brand identity built on natural textures, muted earth tones, and elegant typography.`,
+    results: [
+      'Complete luxury brand identity',
+      'Product packaging across categories',
+      'E-commerce UX design',
+      'Editorial campaign direction'
+    ],
+    gallery: [
+      '/images/brands/portfolio-v4-images/bloom-collective/logo-brandmark.png',
+      '/images/brands/portfolio-v4-images/bloom-collective/packaging-design.png',
+      '/images/brands/portfolio-v4-images/bloom-collective/ecommerce-mockup.png',
+      '/images/brands/portfolio-v4-images/bloom-collective/lookbook-1.png',
+      '/images/brands/portfolio-v4-images/bloom-collective/lookbook-2.png',
+      '/images/brands/portfolio-v4-images/bloom-collective/campaign-photo.png'
+    ]
+  },
+
+  // MERIDIAN STUDIO
+  {
+    id: '23',
+    slug: 'meridian-studio',
+    title: 'Meridian Studio',
+    client: 'Concept Brand',
+    category: 'Creative Agency Brand',
+    year: '2024',
+    tags: ['Brand Identity', 'Agency', 'Professional Services', 'B2B', 'Concept Work'],
+    description: 'A sophisticated brand identity for a global creative consultancy.',
+    heroImage: '/images/brands/portfolio-v4-images/meridian-studio/website-mockup.png',
+    thumbnail: '/images/brands/portfolio-v4-images/meridian-studio/logo-wordmark.png',
+    color: '#1E293B',
+    featured: false,
+    type: 'project',
+    overview: `Meridian Studio is a concept brand for a global creative consultancy serving Fortune 500 clients. B2B brand development where credibility, expertise, and creative capability must communicate simultaneously.`,
+    challenge: `Creative agencies must appear both highly creative AND reliably professional. Strike the perfect balance for enterprise clients.`,
+    approach: `B2B methodology: Credibility Signals, Creative Proof, Professional Touchpoints, Digital Presence.`,
+    solution: `A refined, confident brand identity built on strong typography and restrained color use.`,
+    results: [
+      'Complete B2B brand identity',
+      'Business collateral suite',
+      'Presentation system',
+      'Professional website design'
+    ],
+    gallery: [
+      '/images/brands/portfolio-v4-images/meridian-studio/logo-wordmark.png',
+      '/images/brands/portfolio-v4-images/meridian-studio/business-cards.png',
+      '/images/brands/portfolio-v4-images/meridian-studio/website-mockup.png',
+      '/images/brands/portfolio-v4-images/meridian-studio/presentation-template.png',
+      '/images/brands/portfolio-v4-images/meridian-studio/social-template.png'
+    ]
+  },
+
+  // ═══════════════════════════════════════════════════════════════
+  // WOKEGOD.WORLD PROJECTS - WEBSITES & APPS
+  // ═══════════════════════════════════════════════════════════════
+
+  // EUANGELION
+  {
+    id: '24',
+    slug: 'euangelion',
+    title: 'Euangelion',
+    client: 'Personal Project',
+    category: 'Spiritual Tech & Web Design',
+    year: '2024',
+    tags: ['Web Design', 'Spiritual', 'React', 'Daily Devotional', 'Full Stack'],
+    description: 'A modern daily devotional platform blending ancient wisdom with contemporary digital experience.',
+    heroImage: '/images/real-work/euangelion-hero.jpg',
+    thumbnail: '/images/real-work/euangelion-hero.jpg',
+    color: '#6366F1',
+    featured: false,
+    type: 'project',
+    overview: `Euangelion reimagines the daily devotional for the digital age. The platform delivers contemplative spiritual content through a beautifully designed interface.`,
+    challenge: `Spiritual content online often falls into corporate megachurch aesthetics or amateur blog designs. Create a digital space that feels sacred without being stuffy.`,
+    approach: `Design principles rooted in liturgical tradition: typography that invites slow reading, intentional white space, color palette inspired by stained glass.`,
+    solution: `A React-based devotional platform featuring daily readings and contemplative imagery. Live at euangelion.wokegod.world`,
+    results: ['Daily active users', 'Positive feedback on reading experience', 'Template for future spiritual tech'],
+    gallery: []
+  },
+
+  // WAKE UP MAGAZINE
+  {
+    id: '25',
+    slug: 'wake-up-magazine',
+    title: 'Wake Up',
+    client: 'Personal Project',
+    category: 'Digital Publishing & Design',
+    year: '2024',
+    tags: ['Web Design', 'Zine', 'Publishing', 'Spirituality', 'Editorial'],
+    description: 'A digital zine for the spiritually restless—exploring faith, doubt, and everything in between.',
+    heroImage: '/images/real-work/wakeup-hero.jpg',
+    thumbnail: '/images/real-work/wakeup-hero.jpg',
+    color: '#F97316',
+    featured: false,
+    type: 'project',
+    overview: `"A Zine for the Spiritually Restless" — Wake Up explores the messy middle ground of faith, doubt, deconstruction, and reconstruction.`,
+    challenge: `Traditional religious publishing feels inaccessible to questioning seekers. Signal "safe space for doubt" while treating spiritual matters with weight.`,
+    approach: `Zine aesthetics meet editorial design: bold typography, intentionally imperfect elements, content that asks questions.`,
+    solution: `A digital zine platform with curated articles and visual content. Live at wakeup.wokegod.world`,
+    results: ['Growing readership', 'Bridge between traditional faith and modern doubt', 'Platform for guest writers'],
+    gallery: []
+  },
+
+  // THE ARKIVE
+  {
+    id: '26',
+    slug: 'the-arkive',
+    title: 'The Human Center Arkive',
+    client: 'Personal Project',
+    category: 'Documentary & Brand',
+    year: '2024',
+    tags: ['Documentary', 'YouTube', 'Storytelling', 'Memory Preservation', 'Brand'],
+    description: 'A living archive of human stories—preserving memories that would otherwise be lost to time.',
+    heroImage: '/images/real-work/arkive-hero.jpg',
+    thumbnail: '/images/real-work/arkive-hero.jpg',
+    color: '#C9A962',
+    featured: false,
+    type: 'project',
+    overview: `The Arkive is a documentary project preserving human stories—memories, experiences, and wisdom that exist only in the minds of those who lived them.`,
+    challenge: `Every day, irreplaceable stories disappear. Create a platform that captures these ephemeral human experiences before they're lost forever.`,
+    approach: `Started with family—learning to see my own mother as a complete person with a full life I'd never thought to ask about.`,
+    solution: `A YouTube documentary series creating space for intimate storytelling. 48 interviews captured. Live at arkive.wokegod.world`,
+    results: ['YouTube channel launched', '48 human stories preserved', 'Framework for capturing generational wisdom'],
+    gallery: []
+  },
+
+  // MELT DIGITAL ECOSYSTEM
+  {
+    id: '27',
+    slug: 'melt-ecosystem',
+    title: 'MELT Digital Ecosystem',
+    client: 'MELT Agency',
+    category: 'Agency Web Development',
+    year: '2018-2024',
+    tags: ['Web Design', 'Agency', 'Multiple Sites', 'Brand Evolution', 'Full Stack'],
+    description: 'A complete digital ecosystem for an Atlanta creative agency—from landing pages to internal tools to pitch decks.',
+    heroImage: '/images/real-work/melt-landing-hero.jpg',
+    thumbnail: '/images/real-work/melt-landing-hero.jpg',
+    color: '#FF6B35',
+    featured: false,
+    type: 'project',
+    overview: `Over six years at MELT, I built and evolved their entire digital presence—from public-facing website through multiple iterations to internal tools.`,
+    challenge: `Agency websites need to showcase creative capability while functioning as business tools. Each version evolved with the agency's positioning.`,
+    approach: `Iterative development: V1 establishing presence, V2 capability showcase, Capes internal tool, AI integration, pitch platforms.`,
+    solution: `A family of interconnected sites: meltatl.com, melt-v1, melt-v2, melt-capesite, pitch platforms. All at wokegod.world`,
+    results: ['Multiple site versions', 'Internal tools adopted', 'Pitch platforms for client wins'],
+    gallery: [
+      '/images/real-work/melt-landing-hero.jpg',
+      '/images/real-work/melt-v1-hero.jpg',
+      '/images/real-work/melt-v2-hero.jpg',
+      '/images/real-work/melt-capes-hero.jpg',
+      '/images/real-work/melt-pitch-hero.jpg'
+    ]
+  },
+
+  // DASH DASH
+  {
+    id: '28',
+    slug: 'dash-dash',
+    title: 'Dash Dash',
+    client: 'Personal Project',
+    category: 'App/Tool Design',
+    year: '2024',
+    tags: ['App Design', 'Productivity', 'Tool', 'Web App'],
+    description: 'A focused productivity tool designed for getting things done without the bloat.',
+    heroImage: '/images/real-work/dashdash-hero.jpg',
+    thumbnail: '/images/real-work/dashdash-hero.jpg',
+    color: '#8B5CF6',
+    featured: false,
+    type: 'project',
+    overview: `Dash Dash is a streamlined productivity tool born from frustration with overcomplicated task managers.`,
+    challenge: `Productivity apps tend toward feature creep. Stay focused on the core use case.`,
+    approach: `Ruthless simplification: identify the core loop (add → do → done), remove everything else.`,
+    solution: `A minimal, fast productivity tool. Available at wokegod.world/dashdash/`,
+    results: ['Personal productivity tool in daily use', 'Proof of concept for focused design'],
+    gallery: []
+  },
+
+  // PITCHES
+  {
+    id: '29',
+    slug: 'pitches',
+    title: 'Pitches',
+    client: 'Personal Project',
+    category: 'Presentation Platform',
+    year: '2024',
+    tags: ['Web Design', 'Presentations', 'Pitch Decks', 'Business'],
+    description: 'A platform for creating and sharing compelling pitch presentations.',
+    heroImage: '/images/real-work/pitches-hero.jpg',
+    thumbnail: '/images/real-work/pitches-hero.jpg',
+    color: '#059669',
+    featured: false,
+    type: 'project',
+    overview: `Pitches is a presentation platform built around one philosophy: every great business starts with a compelling story.`,
+    challenge: `Pitch decks are either boring corporate templates or overdesigned distractions.`,
+    approach: `Story-first presentation design: focus on narrative structure, clean typography.`,
+    solution: `A presentation platform for compelling pitch decks. Live at pitches.wokegod.world`,
+    results: ['Platform live', 'Used for actual client pitches', 'Framework for story-driven presenting'],
+    gallery: []
+  },
+
+  // GARAGESALE
+  {
+    id: '30',
+    slug: 'garagesale',
+    title: 'GarageSale',
+    client: 'Personal Project',
+    category: 'E-commerce Design',
+    year: '2024',
+    tags: ['Web Design', 'E-commerce', 'Minimal', 'Marketplace'],
+    description: 'A minimal e-commerce platform proving that selling online doesn\'t need to be complicated.',
+    heroImage: '/images/real-work/garagesale-hero.jpg',
+    thumbnail: '/images/real-work/garagesale-hero.jpg',
+    color: '#78716C',
+    featured: false,
+    type: 'project',
+    overview: `GarageSale strips e-commerce down to its essentials. No bloated platforms—just a clean way to sell things online.`,
+    challenge: `E-commerce platforms are either overly complex or too limited. Find the sweet spot.`,
+    approach: `Design like it's 2004, build like it's 2024. Focus on the product, minimal UI, mobile-first.`,
+    solution: `A lightweight e-commerce template. Live at garagesale.wokegod.world`,
+    results: ['Clean e-commerce template', 'Fast-loading design', 'Proof of concept'],
+    gallery: []
+  },
+
+  // NOVA VENTURES - CONCEPT BRAND
+  {
+    id: '31',
+    slug: 'nova-ventures',
+    title: 'Nova Ventures',
+    client: 'Concept Brand',
+    category: 'VC Brand Identity',
+    year: '2024',
+    tags: ['Brand Identity', 'Venture Capital', 'Finance', 'Concept Work'],
+    description: 'Brand identity for a deep tech venture capital firm.',
+    heroImage: '/images/case-studies/nova-ventures-01.png',
+    thumbnail: '/images/case-studies/nova-ventures-01.png',
+    color: '#7C3AED',
+    featured: false,
+    type: 'project',
+    overview: `Nova Ventures is a concept brand for a deep tech VC firm, demonstrating premium financial services branding.`,
+    challenge: `VC brands must balance approachability for founders with credibility for LPs. Dark, premium aesthetic required.`,
+    approach: `Midnight + Violet color palette, aurora gradient effects, a16z energy but darker.`,
+    solution: `A sophisticated brand identity that signals both innovation and institutional credibility.`,
+    results: ['Complete VC brand identity', 'Pitch deck templates', 'Website design'],
+    gallery: ['/images/case-studies/nova-ventures-01.png', '/images/case-studies/nova-ventures-02.png']
+  },
+
+  // SYNTHESIS LABS - CONCEPT BRAND
+  {
+    id: '32',
+    slug: 'synthesis-labs',
+    title: 'Synthesis Labs',
+    client: 'Concept Brand',
+    category: 'AI Research Brand',
+    year: '2024',
+    tags: ['Brand Identity', 'AI Research', 'Tech', 'Concept Work'],
+    description: 'Brand identity for an AI research laboratory.',
+    heroImage: '/images/case-studies/synthesis-labs-01.png',
+    thumbnail: '/images/case-studies/synthesis-labs-01.png',
+    color: '#06B6D4',
+    featured: false,
+    type: 'project',
+    overview: `Synthesis Labs is a concept brand for an AI research lab, showcasing cutting-edge tech branding.`,
+    challenge: `AI research brands need to feel innovative yet trustworthy. Avoid generic tech clichés.`,
+    approach: `DeepMind aesthetic—obsidian + cyan palette, neural network visuals, dark backgrounds with neon accents.`,
+    solution: `A brand identity that communicates frontier research without being intimidating.`,
+    results: ['Complete AI research brand', 'Publication templates', 'Website design'],
+    gallery: ['/images/case-studies/synthesis-labs-01.png']
   }
 ]
 
