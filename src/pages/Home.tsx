@@ -1,17 +1,18 @@
 import { useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
 import Hero from '../components/Hero'
+import Services from '../components/Services'
 import CaseStudyCard from '../components/CaseStudyCard'
+import About from '../components/About'
+import Calculator from '../components/Calculator'
 import Footer from '../components/Footer'
 import { caseStudies } from '../data/caseStudies'
 
 const Home = () => {
   const philosophyRef = useRef<HTMLDivElement>(null)
-  const aboutRef = useRef<HTMLDivElement>(null)
   const contactRef = useRef<HTMLDivElement>(null)
   
   const isPhilosophyInView = useInView(philosophyRef, { once: true, margin: '-100px' })
-  const isAboutInView = useInView(aboutRef, { once: true, margin: '-100px' })
   const isContactInView = useInView(contactRef, { once: true, margin: '-100px' })
 
   return (
@@ -71,87 +72,14 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Services Section */}
+      <Services />
+
       {/* About Section */}
-      <section 
-        id="about" 
-        ref={aboutRef}
-        className="section-padding bg-light-200"
-      >
-        <div className="max-w-6xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-start">
-            <motion.div
-              initial={{ opacity: 0, y: 40 }}
-              animate={isAboutInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
-            >
-              <h2 className="text-4xl md:text-5xl font-display font-bold text-dark-900 mb-8">
-                About
-              </h2>
+      <About />
 
-              <div className="space-y-6 text-dark-700">
-                <p className="text-lg leading-relaxed">
-                  I'm a creative director, designer, and technologist with over a decade 
-                  of experience building brands that matter.
-                </p>
-                <p className="leading-relaxed">
-                  My journey has taken me from SCAD (Magna Cum Laude) to innovation labs 
-                  at MELT, with a Gates Millennium Scholarship providing the foundation. 
-                  I've developed a unique practice at the intersection of traditional 
-                  design craft and emerging AI capabilities.
-                </p>
-                <p className="leading-relaxed">
-                  Today, I work with forward-thinking companies who understand that 
-                  the future of creativity is collaborative—human vision amplified 
-                  by artificial intelligence.
-                </p>
-              </div>
-              
-              {/* Credentials */}
-              <div className="mt-10 flex flex-wrap gap-3">
-                {['SCAD Magna Cum Laude', 'Gates Millennium Scholar', 'MELT Senior Art Director'].map((cred) => (
-                  <span 
-                    key={cred}
-                    className="px-4 py-2 border border-dark-900/10 text-dark-600 text-xs tracking-wider"
-                  >
-                    {cred}
-                  </span>
-                ))}
-              </div>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, y: 40 }}
-              animate={isAboutInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 1, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
-            >
-              {/* Stats */}
-              <div className="grid grid-cols-2 gap-8">
-                {[
-                  { number: '10+', label: 'Years Experience' },
-                  { number: '50+', label: 'Projects Delivered' },
-                  { number: '2.7K', label: 'AI Artworks' },
-                  { number: '∞', label: 'Ideas Explored' },
-                ].map((stat, i) => (
-                  <motion.div
-                    key={stat.label}
-                    className="text-center lg:text-left"
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={isAboutInView ? { opacity: 1, y: 0 } : {}}
-                    transition={{ delay: 0.4 + i * 0.1, duration: 0.6 }}
-                  >
-                    <p className="text-5xl md:text-6xl font-display font-bold text-dark-900 mb-2">
-                      {stat.number}
-                    </p>
-                    <p className="text-dark-600 text-sm tracking-wider">
-                      {stat.label}
-                    </p>
-                  </motion.div>
-                ))}
-              </div>
-            </motion.div>
-          </div>
-        </div>
-      </section>
+      {/* Project Calculator */}
+      <Calculator />
 
       {/* Contact Section */}
       <section 
