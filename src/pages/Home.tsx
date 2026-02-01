@@ -3,7 +3,6 @@ import { motion, useInView } from 'framer-motion'
 import Hero from '../components/Hero'
 import Services from '../components/Services'
 import CaseStudyCard from '../components/CaseStudyCard'
-import About from '../components/About'
 import Calculator from '../components/Calculator'
 import Footer from '../components/Footer'
 import { caseStudies } from '../data/caseStudies'
@@ -74,9 +73,6 @@ const Home = () => {
 
       {/* Services Section */}
       <Services />
-
-      {/* About Section */}
-      <About />
 
       {/* Project Calculator */}
       <Calculator />

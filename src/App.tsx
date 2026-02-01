@@ -10,6 +10,7 @@ import Navigation from './components/Navigation'
 // Pages
 import Home from './pages/Home'
 import CaseStudy from './pages/CaseStudy'
+import AboutPage from './pages/AboutPage'
 
 function App() {
   const [isLoading, setIsLoading] = useState(true)
@@ -50,6 +51,7 @@ function App() {
             <Routes location={location} key={location.pathname}>
               <Route path="/" element={<Home />} />
               <Route path="/work/:slug" element={<CaseStudy />} />
+              <Route path="/about" element={<AboutPage />} />
             </Routes>
           </AnimatePresence>
         </>
