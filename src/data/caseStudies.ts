@@ -21,7 +21,7 @@ export interface CaseStudy {
 }
 
 export const caseStudies: CaseStudy[] = [
-  // AI-Generated Fake Projects
+  // AI-Generated Fake Projects - Featuring diverse teams and leadership
   {
     id: '1',
     slug: 'nova-ventures',
@@ -31,8 +31,8 @@ export const caseStudies: CaseStudy[] = [
     year: '2024',
     tags: ['Brand Strategy', 'Visual Identity', 'Website', 'Pitch Deck'],
     description: 'Redefining venture capital for the AI era. A complete brand transformation for a forward-thinking investment firm.',
-    heroImage: 'https://images.unsplash.com/photo-1639322537228-f710d846310a?w=1920&q=80',
-    thumbnail: 'https://images.unsplash.com/photo-1639322537228-f710d846310a?w=800&q=80',
+    heroImage: 'https://images.unsplash.com/photo-1531545514256-b1400bc00f31?w=1920&q=80',
+    thumbnail: 'https://images.unsplash.com/photo-1531545514256-b1400bc00f31?w=800&q=80',
     color: '#6366f1',
     featured: true,
     type: 'project',
@@ -47,10 +47,10 @@ export const caseStudies: CaseStudy[] = [
       'Brand recognition increased 180% among tech founders'
     ],
     gallery: [
-      'https://images.unsplash.com/photo-1551434678-e076c223a692?w=1200&q=80',
-      'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&q=80',
-      'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&q=80',
-      'https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=1200&q=80'
+      'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=1200&q=80',
+      'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=1200&q=80',
+      'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=1200&q=80',
+      'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1200&q=80'
     ]
   },
   {
@@ -62,8 +62,8 @@ export const caseStudies: CaseStudy[] = [
     year: '2024',
     tags: ['Brand Strategy', 'Visual Identity', 'Product UI', 'Launch Campaign'],
     description: 'Launching a biotech revolution. From stealth to spotlight with a brand built to inspire scientific wonder.',
-    heroImage: 'https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=1920&q=80',
-    thumbnail: 'https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=800&q=80',
+    heroImage: 'https://images.unsplash.com/photo-1576086213369-97a306d36557?w=1920&q=80',
+    thumbnail: 'https://images.unsplash.com/photo-1576086213369-97a306d36557?w=800&q=80',
     color: '#10b981',
     featured: true,
     type: 'project',
@@ -78,10 +78,10 @@ export const caseStudies: CaseStudy[] = [
       '12 strategic partnership deals closed'
     ],
     gallery: [
-      'https://images.unsplash.com/photo-1579154204601-01588f351e67?w=1200&q=80',
-      'https://images.unsplash.com/photo-1581093458791-9f3c3250a8b8?w=1200&q=80',
-      'https://images.unsplash.com/photo-1530026405186-ed1f139313f8?w=1200&q=80',
-      'https://images.unsplash.com/photo-1576086213369-97a306d36557?w=1200&q=80'
+      'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=1200&q=80',
+      'https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=1200&q=80',
+      'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=1200&q=80',
+      'https://images.unsplash.com/photo-1580281657702-257584239a55?w=1200&q=80'
     ]
   },
   {
@@ -93,8 +93,8 @@ export const caseStudies: CaseStudy[] = [
     year: '2023',
     tags: ['Brand Identity', 'Event Collateral', 'Digital Experience', 'Environmental Design'],
     description: 'Elevating luxury events through AI-crafted experiences. A rebrand that redefined opulence for the modern age.',
-    heroImage: 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1920&q=80',
-    thumbnail: 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&q=80',
+    heroImage: 'https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=1920&q=80',
+    thumbnail: 'https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=800&q=80',
     color: '#f59e0b',
     featured: true,
     type: 'project',
@@ -109,42 +109,42 @@ export const caseStudies: CaseStudy[] = [
       'Waitlist of 18 months for premium dates'
     ],
     gallery: [
-      'https://images.unsplash.com/photo-1511578314322-379afb476865?w=1200&q=80',
-      'https://images.unsplash.com/photo-1519750157634-b6d493a0f77c?w=1200&q=80',
-      'https://images.unsplash.com/photo-1505236858219-8359eb29e329?w=1200&q=80',
-      'https://images.unsplash.com/photo-1478146896981-b80fe463b330?w=1200&q=80'
+      'https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1200&q=80',
+      'https://images.unsplash.com/photo-1529543544277-750e7ea1e8d0?w=1200&q=80',
+      'https://images.unsplash.com/photo-1523580494863-6f3031224c94?w=1200&q=80',
+      'https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=1200&q=80'
     ]
   },
-  // AI Image Gallery Projects
+  // AI Image Gallery Projects - Centering Black and POC representation
   {
     id: '4',
-    slug: 'ethereal-forms',
-    title: 'Ethereal Forms',
+    slug: 'future-faces',
+    title: 'Future Faces',
     client: 'Personal Exploration',
-    category: 'Generative Art',
+    category: 'AI Portraiture',
     year: '2024',
-    tags: ['AI Art', 'Prompt Engineering', 'Creative Direction', 'Generative Design'],
-    description: 'An exploration of organic abstraction through AI-generated imagery. Prompt engineering as an art form.',
-    heroImage: 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=1920&q=80',
-    thumbnail: 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=800&q=80',
-    color: '#8b5cf6',
+    tags: ['AI Art', 'Portraiture', 'Representation', 'Prompt Engineering'],
+    description: 'Celebrating the beauty and diversity of Black and Brown faces through AI-generated portraiture.',
+    heroImage: 'https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=1920&q=80',
+    thumbnail: 'https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=800&q=80',
+    color: '#d4af37',
     featured: false,
     type: 'gallery',
-    overview: 'A personal exploration into the boundaries of AI image generation, focusing on organic forms, ethereal lighting, and the space between the real and imagined.',
-    challenge: 'Creating cohesive visual narratives through AI requires developing a sophisticated understanding of prompt architecture and model behavior—it\'s creative direction for silicon minds.',
-    approach: 'Treating prompt engineering as a design discipline, I developed systematic approaches to achieving specific aesthetic outcomes, documenting the "design language" that emerges from particular prompt structures.',
-    solution: 'A curated collection that demonstrates AI creative direction—showing how intentional prompt crafting can yield results that transcend random generation into genuine artistic expression.',
+    overview: 'An AI-generated portrait series celebrating the beauty and diversity of Black and Brown faces. This project deliberately centers representation that has historically been marginalized in both traditional art and AI training data.',
+    challenge: 'AI systems often struggle with diverse representation due to biases in training data. This project sought to push back against these limitations through intentional prompt engineering that centers and celebrates Black and Brown beauty.',
+    approach: 'Through extensive experimentation, I developed prompting techniques that produce stunning, dignified portraits of people of color. Each image is the result of careful direction—adjusting lighting, expression, composition, and cultural elements to create portraits that feel both timeless and forward-looking.',
+    solution: 'The collection presents a vision of portraiture where diversity is the default, not the exception. Each piece combines classical portrait techniques with contemporary aesthetics, creating images that could hang in museums of the future.',
     results: [
-      'Featured in "AI Art: The New Medium" exhibition',
-      '50K+ impressions on Behance',
-      'Prompt methodology adopted by 3 design studios',
-      'Speaking invitation at Creative AI Summit'
+      'Collection acquired by 2 digital art museums',
+      'Prompting methodology shared with 10,000+ AI artists',
+      'Workshop series on inclusive AI art practice',
+      'Featured in conversations about AI ethics and representation'
     ],
     gallery: [
-      'https://images.unsplash.com/photo-1634017839464-5c339bbe3c35?w=1200&q=80',
-      'https://images.unsplash.com/photo-1618005198919-d3d4b5a92ead?w=1200&q=80',
-      'https://images.unsplash.com/photo-1617791160505-6f00504e3519?w=1200&q=80',
-      'https://images.unsplash.com/photo-1614851099175-e5b30eb6f696?w=1200&q=80'
+      'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=1200&q=80',
+      'https://images.unsplash.com/photo-1506634572416-48cdfe530110?w=1200&q=80',
+      'https://images.unsplash.com/photo-1492288991661-058aa541ff43?w=1200&q=80',
+      'https://images.unsplash.com/photo-1517841905240-472988babdf9?w=1200&q=80'
     ]
   },
   {
@@ -213,6 +213,5 @@ export const caseStudies: CaseStudy[] = [
 
 export const getFeaturedCaseStudies = (): CaseStudy[] => caseStudies.filter(cs => cs.featured)
 export const getCaseStudyBySlug = (slug: string): CaseStudy | undefined => caseStudies.find(cs => cs.slug === slug)
-export const getCaseStudy = getCaseStudyBySlug
 export const getProjectCaseStudies = (): CaseStudy[] => caseStudies.filter(cs => cs.type === 'project')
 export const getGalleryCaseStudies = (): CaseStudy[] => caseStudies.filter(cs => cs.type === 'gallery')

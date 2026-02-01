@@ -2,12 +2,12 @@ import { useEffect } from 'react'
 import { useParams, Link } from 'react-router-dom'
 import { motion, useScroll, useTransform } from 'framer-motion'
 import { useRef } from 'react'
-import { getCaseStudy, caseStudies } from '../data/caseStudies'
+import { getCaseStudyBySlug, caseStudies } from '../data/caseStudies'
 import Footer from '../components/Footer'
 
 const CaseStudy = () => {
   const { slug } = useParams<{ slug: string }>()
-  const study = getCaseStudy(slug || '')
+  const study = getCaseStudyBySlug(slug || '')
   
   const heroRef = useRef<HTMLDivElement>(null)
   const { scrollYProgress } = useScroll({
