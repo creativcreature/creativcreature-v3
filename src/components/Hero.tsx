@@ -1,14 +1,25 @@
-import { useEffect, useRef } from 'react'
-import { motion, useScroll, useTransform } from 'framer-motion'
+import { useEffect, useRef, useState } from 'react'
+import { motion, useScroll, useTransform, AnimatePresence } from 'framer-motion'
 import { gsap } from 'gsap'
+
+const ROTATING_WORDS = ['CREATURE', 'DIRECTOR', 'STRATEGIST', 'VISIONARY']
 
 const Hero = () => {
   const containerRef = useRef<HTMLDivElement>(null)
   const titleRef = useRef<HTMLHeadingElement>(null)
+  const [wordIndex, setWordIndex] = useState(0)
 
   const { scrollY } = useScroll()
   const opacity = useTransform(scrollY, [0, 400], [1, 0])
   const y = useTransform(scrollY, [0, 400], [0, 100])
+
+  // Rotate words every 3 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setWordIndex((prev) => (prev + 1) % ROTATING_WORDS.length)
+    }, 3000)
+    return () => clearInterval(interval)
+  }, [])
 
   useEffect(() => {
     if (!titleRef.current) return
@@ -47,16 +58,22 @@ const Hero = () => {
           className="font-display font-bold text-dark-900 leading-[0.95] mb-6"
         >
           <span className="hero-line block text-[clamp(2.5rem,8vw,6rem)] overflow-hidden">
-            The
+            CREATIV
           </span>
-          <motion.span 
-            className="hero-line block text-[clamp(2.5rem,8vw,6rem)] overflow-hidden"
-            animate={{ rotateX: [0, 360] }}
-            transition={{ duration: 8, repeat: Infinity, ease: "linear" }}
-            style={{ display: 'inline-block', transformStyle: 'preserve-3d' }}
-          >
-            CreativCreature
-          </motion.span>
+          <span className="hero-line block text-[clamp(2.5rem,8vw,6rem)] overflow-hidden h-[1.2em]">
+            <AnimatePresence mode="wait">
+              <motion.span
+                key={wordIndex}
+                initial={{ y: 50, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                exit={{ y: -50, opacity: 0 }}
+                transition={{ duration: 0.5, ease: 'easeInOut' }}
+                className="block"
+              >
+                {ROTATING_WORDS[wordIndex]}
+              </motion.span>
+            </AnimatePresence>
+          </span>
         </h1>
 
         {/* Value proposition - SPECIFIC */}
