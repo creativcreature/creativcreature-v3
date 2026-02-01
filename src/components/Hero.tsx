@@ -45,15 +45,15 @@ const Hero = () => {
   return (
     <section 
       ref={containerRef}
-      className="relative min-h-screen flex items-center justify-center overflow-hidden"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden bg-light-100"
     >
-      {/* Particles Background */}
+      {/* Particles Background - adjusted for light theme */}
       <Particles />
 
-      {/* Gradient Orbs */}
+      {/* Gradient Orbs - more subtle for light theme */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <motion.div
-          className="absolute top-1/4 -left-20 w-[600px] h-[600px] rounded-full bg-accent-primary/5 blur-[150px]"
+          className="absolute top-1/4 -left-20 w-[600px] h-[600px] rounded-full bg-accent-primary/10 blur-[150px]"
           animate={{
             scale: [1, 1.1, 1],
             x: [0, 50, 0],
@@ -65,7 +65,7 @@ const Hero = () => {
           }}
         />
         <motion.div
-          className="absolute bottom-1/4 -right-20 w-[500px] h-[500px] rounded-full bg-accent-glow/5 blur-[120px]"
+          className="absolute bottom-1/4 -right-20 w-[500px] h-[500px] rounded-full bg-accent-glow/8 blur-[120px]"
           animate={{
             scale: [1.1, 1, 1.1],
             x: [0, -30, 0],
@@ -87,22 +87,19 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2, duration: 0.8 }}
         >
-          <span className="inline-block px-4 py-2 border border-accent-primary/30 font-mono text-xs tracking-[0.3em] text-accent-primary/80">
-            AI-AUGMENTED CREATIVE DIRECTOR
+          <span className="inline-block px-4 py-2 border border-dark-900/20 font-mono text-xs tracking-[0.3em] text-dark-700">
+            AI-AUGMENTED CREATIVE STUDIO
           </span>
         </motion.div>
 
         {/* Main Title */}
         <h1 
           ref={titleRef}
-          className="font-display text-5xl md:text-7xl lg:text-8xl font-medium text-cream leading-none mb-6"
+          className="font-display text-5xl md:text-7xl lg:text-8xl font-medium text-dark-900 leading-none mb-6"
           style={{ perspective: '1000px' }}
         >
           <span className="block overflow-hidden">
-            {splitText('Christopher')}
-          </span>
-          <span className="block overflow-hidden mt-2">
-            {splitText('James Parker')}
+            {splitText('CreativCreature')}
           </span>
         </h1>
 
@@ -114,24 +111,24 @@ const Hero = () => {
           transition={{ delay: 1.2, duration: 0.8 }}
         >
           <motion.p
-            className="font-display text-2xl md:text-3xl lg:text-4xl text-accent-primary italic"
+            className="font-display text-2xl md:text-3xl lg:text-4xl gradient-text italic"
             initial={{ y: 40 }}
             animate={{ y: 0 }}
             transition={{ delay: 1.2, duration: 0.8, ease: [0.76, 0, 0.24, 1] }}
           >
-            Neo Renaissance Man
+            Brand Strategy & Creative Direction
           </motion.p>
         </motion.div>
 
         {/* Description */}
         <motion.p
-          className="mt-8 max-w-2xl mx-auto text-cream/60 text-lg md:text-xl leading-relaxed"
+          className="mt-8 max-w-2xl mx-auto text-dark-600 text-lg md:text-xl leading-relaxed"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1.5, duration: 0.8 }}
         >
-          Mastering the intersection of strategy, design, and technology. 
-          Where human creativity meets artificial intelligence.
+          Where human creativity meets artificial intelligence. 
+          Transforming brands through strategy, design, and emerging technology.
         </motion.p>
 
         {/* CTA */}
@@ -143,18 +140,18 @@ const Hero = () => {
         >
           <a
             href="#work"
-            className="group relative px-8 py-4 bg-accent-primary text-dark-900 font-medium tracking-wide overflow-hidden transition-all duration-300"
+            className="group relative px-8 py-4 bg-dark-900 text-light-100 font-medium tracking-wide overflow-hidden transition-all duration-300"
             data-cursor="hover"
           >
             <span className="relative z-10">View Selected Work</span>
-            <div className="absolute inset-0 bg-cream translate-y-full group-hover:translate-y-0 transition-transform duration-300" />
+            <div className="absolute inset-0 bg-accent-primary translate-y-full group-hover:translate-y-0 transition-transform duration-300" />
           </a>
           <a
             href="#about"
-            className="px-8 py-4 border border-cream/30 text-cream font-medium tracking-wide hover:border-accent-primary hover:text-accent-primary transition-all duration-300"
+            className="px-8 py-4 border border-dark-900/30 text-dark-900 font-medium tracking-wide hover:border-accent-primary hover:text-accent-primary transition-all duration-300"
             data-cursor="hover"
           >
-            About Me
+            About
           </a>
         </motion.div>
       </div>
@@ -172,8 +169,8 @@ const Hero = () => {
           transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
           onClick={() => document.getElementById('work')?.scrollIntoView({ behavior: 'smooth' })}
         >
-          <span className="font-mono text-xs tracking-widest text-cream/40">SCROLL</span>
-          <div className="w-px h-12 bg-gradient-to-b from-cream/40 to-transparent" />
+          <span className="font-mono text-xs tracking-widest text-dark-600/60">SCROLL</span>
+          <div className="w-px h-12 bg-gradient-to-b from-dark-900/40 to-transparent" />
         </motion.div>
       </motion.div>
 

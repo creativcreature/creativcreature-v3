@@ -38,25 +38,25 @@ const Preloader = ({ onComplete }: PreloaderProps) => {
     }
   }, [progress, onComplete])
 
-  const name = "CHRISTOPHER JAMES PARKER"
+  const name = "CREATIVCREATURE"
   const letters = name.split('')
 
   return (
     <AnimatePresence>
       {!isExiting && (
         <motion.div
-          className="fixed inset-0 z-[10000] bg-dark-900 flex flex-col items-center justify-center"
+          className="fixed inset-0 z-[10000] bg-light-100 flex flex-col items-center justify-center"
           exit={{
             clipPath: 'polygon(0 0, 100% 0, 100% 0, 0 0)',
             transition: { duration: 1, ease: [0.76, 0, 0.24, 1] },
           }}
         >
-          {/* Background gradient */}
-          <div className="absolute inset-0 bg-gradient-to-b from-dark-800 via-dark-900 to-dark-900" />
+          {/* Background gradient - light theme */}
+          <div className="absolute inset-0 bg-gradient-to-b from-light-200 via-light-100 to-light-100" />
           
           {/* Subtle grid pattern */}
           <div 
-            className="absolute inset-0 opacity-[0.02]"
+            className="absolute inset-0 opacity-[0.03]"
             style={{
               backgroundImage: `linear-gradient(rgba(201, 169, 98, 0.5) 1px, transparent 1px),
                                linear-gradient(90deg, rgba(201, 169, 98, 0.5) 1px, transparent 1px)`,
@@ -86,7 +86,7 @@ const Preloader = ({ onComplete }: PreloaderProps) => {
                       ease: [0.22, 1, 0.36, 1],
                     }}
                     style={{
-                      color: letter === ' ' ? 'transparent' : '#f5f0e8',
+                      color: letter === ' ' ? 'transparent' : '#1a1a1a',
                       width: letter === ' ' ? '0.5em' : 'auto',
                     }}
                   >
@@ -109,13 +109,13 @@ const Preloader = ({ onComplete }: PreloaderProps) => {
                 animate={{ y: 0 }}
                 transition={{ delay: 1.2, duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
               >
-                AI-Augmented Creative Director
+                AI-Augmented Creative Studio
               </motion.p>
             </motion.div>
 
             {/* Progress bar */}
             <div className="w-64 md:w-80 mx-auto">
-              <div className="h-[1px] bg-dark-600 overflow-hidden">
+              <div className="h-[1px] bg-light-300 overflow-hidden">
                 <motion.div
                   className="h-full bg-gradient-to-r from-accent-secondary via-accent-primary to-accent-glow"
                   initial={{ width: 0 }}
@@ -124,7 +124,7 @@ const Preloader = ({ onComplete }: PreloaderProps) => {
                 />
               </div>
               <motion.p
-                className="mt-4 text-xs tracking-widest text-cream/40 font-mono"
+                className="mt-4 text-xs tracking-widest text-dark-600/40 font-mono"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.5 }}

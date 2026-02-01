@@ -14,8 +14,8 @@ html {
 
 body {
   font-family: 'Inter', system-ui, sans-serif;
-  background-color: #0a0a0a;
-  color: #f5f0e8;
+  background-color: #FAF8F5;
+  color: #1a1a1a;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -30,17 +30,17 @@ html.lenis {
   scroll-behavior: auto;
 }
 
-/* Custom scrollbar */
+/* Custom scrollbar - light theme */
 ::-webkit-scrollbar {
   width: 6px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #0a0a0a;
+  background: #FAF8F5;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #333;
+  background: #DDD6CA;
   border-radius: 3px;
 }
 
@@ -51,10 +51,10 @@ html.lenis {
 /* Selection */
 ::selection {
   background: rgba(201, 169, 98, 0.3);
-  color: #f5f0e8;
+  color: #1a1a1a;
 }
 
-/* Cursor */
+/* Cursor - adjusted for light theme */
 .cursor-dot {
   pointer-events: none;
   position: fixed;
@@ -62,7 +62,7 @@ html.lenis {
   left: 0;
   width: 8px;
   height: 8px;
-  background: #c9a962;
+  background: #1a1a1a;
   border-radius: 50%;
   z-index: 9999;
   transition: transform 0.15s ease-out;
@@ -76,7 +76,7 @@ html.lenis {
   left: 0;
   width: 40px;
   height: 40px;
-  border: 1px solid rgba(201, 169, 98, 0.5);
+  border: 1px solid rgba(26, 26, 26, 0.3);
   border-radius: 50%;
   z-index: 9998;
   transition: transform 0.2s ease-out, border-color 0.2s ease;
@@ -87,7 +87,7 @@ html.lenis {
   border-color: #c9a962;
 }
 
-/* Gradient text */
+/* Gradient text - gold accent */
 .gradient-text {
   background: linear-gradient(135deg, #c9a962 0%, #d4af37 50%, #8b7355 100%);
   -webkit-background-clip: text;
@@ -95,9 +95,9 @@ html.lenis {
   background-clip: text;
 }
 
-/* Glow effect */
+/* Glow effect - subtle for light theme */
 .glow {
-  box-shadow: 0 0 40px rgba(201, 169, 98, 0.15);
+  box-shadow: 0 0 40px rgba(201, 169, 98, 0.1);
 }
 
 /* Line animation */
@@ -124,7 +124,7 @@ html.lenis {
   }
 }
 
-/* Noise texture overlay */
+/* Noise texture overlay - very subtle for light theme */
 .noise-overlay {
   position: fixed;
   top: 0;
@@ -133,7 +133,7 @@ html.lenis {
   height: 100%;
   pointer-events: none;
   z-index: 9000;
-  opacity: 0.03;
+  opacity: 0.015;
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
 }
 
@@ -149,7 +149,7 @@ html.lenis {
 
 .case-study-card::before {
   content: '';
-  @apply absolute inset-0 bg-gradient-to-t from-dark-900/90 via-transparent to-transparent opacity-0 transition-opacity duration-500;
+  @apply absolute inset-0 bg-gradient-to-t from-light-100/90 via-transparent to-transparent opacity-0 transition-opacity duration-500;
 }
 
 .case-study-card:hover::before {

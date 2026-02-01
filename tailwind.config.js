@@ -7,11 +7,19 @@ export default {
   theme: {
     extend: {
       colors: {
+        // Light theme - airy, premium
+        light: {
+          50: '#FFFFFF',
+          100: '#FAF8F5',   // Main background - warm off-white
+          200: '#F5F2ED',   // Slightly darker
+          300: '#EBE6DE',   // Borders, dividers
+          400: '#DDD6CA',   // Subtle elements
+        },
         dark: {
-          900: '#0a0a0a',
-          800: '#111111',
-          700: '#1a1a1a',
-          600: '#222222',
+          900: '#1a1a1a',   // Primary text
+          800: '#2a2a2a',   // Secondary text
+          700: '#3a3a3a',   // Muted text
+          600: '#4a4a4a',   // Light text
         },
         accent: {
           primary: '#c9a962',
