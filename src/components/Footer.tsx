@@ -20,7 +20,7 @@ const Footer = () => {
           {/* Brand */}
           <div>
             <h3 className="font-display text-xl font-bold text-dark-900 mb-4">
-              Christopher James Parker
+              CreativCreature
             </h3>
             <p className="text-dark-600 text-sm leading-relaxed mb-4">
               AI-Augmented Creative Director
@@ -86,7 +86,7 @@ const Footer = () => {
       <div className="border-t border-dark-900/5">
         <div className="max-w-7xl mx-auto px-6 md:px-12 py-6">
           <p className="text-dark-500 text-xs text-center">
-            © {currentYear} Christopher James Parker. All rights reserved.
+            © {currentYear} CreativCreature. All rights reserved.
           </p>
         </div>
       </div>

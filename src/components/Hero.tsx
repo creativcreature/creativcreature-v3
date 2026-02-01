@@ -47,11 +47,16 @@ const Hero = () => {
           className="font-display font-bold text-dark-900 leading-[0.95] mb-6"
         >
           <span className="hero-line block text-[clamp(2.5rem,8vw,6rem)] overflow-hidden">
-            Christopher
+            The
           </span>
-          <span className="hero-line block text-[clamp(2.5rem,8vw,6rem)] overflow-hidden">
-            James Parker
-          </span>
+          <motion.span 
+            className="hero-line block text-[clamp(2.5rem,8vw,6rem)] overflow-hidden"
+            animate={{ rotateX: [0, 360] }}
+            transition={{ duration: 8, repeat: Infinity, ease: "linear" }}
+            style={{ display: 'inline-block', transformStyle: 'preserve-3d' }}
+          >
+            CreativCreature
+          </motion.span>
         </h1>
 
         {/* Value proposition - SPECIFIC */}
