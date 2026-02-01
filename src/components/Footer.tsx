@@ -1,104 +1,92 @@
-import { Link } from 'react-router-dom'
-
 const Footer = () => {
   const currentYear = new Date().getFullYear()
 
+  const archiveLinks = [
+    { label: 'Original', href: 'https://creativcreature.github.io/', version: 'V0' },
+    { label: 'Version 1', href: 'https://cparker-portfolio-premium.netlify.app/', version: 'V1' },
+    { label: 'Version 2', href: 'https://creativcreature.github.io/creativcreature-v3/', version: 'V2' },
+  ]
+
+  const socialLinks = [
+    { label: 'LinkedIn', href: 'https://linkedin.com/in/creativcreature' },
+    { label: 'Behance', href: 'https://behance.net/creativcreature' },
+    { label: 'Instagram', href: 'https://instagram.com/creativcreature' },
+  ]
+
   return (
-    <footer className="bg-light-300 py-16 px-6 md:px-12">
-      <div className="max-w-7xl mx-auto">
-        <div className="grid md:grid-cols-3 gap-12 mb-12">
+    <footer className="bg-light-200 border-t border-dark-900/5">
+      <div className="max-w-7xl mx-auto px-6 md:px-12 py-16 md:py-20">
+        <div className="grid md:grid-cols-3 gap-12">
           {/* Brand */}
           <div>
-            <Link to="/" className="inline-block mb-4">
-              <span className="font-display text-2xl font-bold text-dark-800">
-                CreativCreature
-              </span>
-            </Link>
-            <p className="text-dark-600/70 text-sm leading-relaxed">
-              AI-Augmented Creative Studio.<br />
-              Brand strategy & experiential design.
+            <h3 className="font-display text-xl font-bold text-dark-900 mb-4">
+              Christopher James Parker
+            </h3>
+            <p className="text-dark-600 text-sm leading-relaxed mb-4">
+              AI-Augmented Creative Director
+              <br />
+              Neo RenAIssance Man
             </p>
+            <a 
+              href="mailto:hello@creativcreature.com"
+              className="text-dark-900 text-sm hover-underline"
+            >
+              hello@creativcreature.com
+            </a>
           </div>
 
-          {/* Navigation */}
+          {/* Social */}
           <div>
-            <h4 className="font-display text-sm tracking-wider uppercase text-dark-800 mb-4">
-              Navigation
-            </h4>
-            <ul className="space-y-2">
-              <li>
-                <a href="/#work" className="text-dark-600/70 hover:text-dark-800 transition-colors text-sm">
-                  Work
-                </a>
-              </li>
-              <li>
-                <a href="/#about" className="text-dark-600/70 hover:text-dark-800 transition-colors text-sm">
-                  About
-                </a>
-              </li>
-              <li>
-                <a href="/#contact" className="text-dark-600/70 hover:text-dark-800 transition-colors text-sm">
-                  Contact
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          {/* Connect */}
-          <div>
-            <h4 className="font-display text-sm tracking-wider uppercase text-dark-800 mb-4">
+            <h4 className="text-xs tracking-wider text-dark-600 uppercase mb-4">
               Connect
             </h4>
             <ul className="space-y-2">
-              <li>
-                <a 
-                  href="https://linkedin.com/in/creativcreature" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="text-dark-600/70 hover:text-dark-800 transition-colors text-sm"
-                >
-                  LinkedIn
-                </a>
-              </li>
-              <li>
-                <a 
-                  href="https://www.behance.net/Chrisparker21" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="text-dark-600/70 hover:text-dark-800 transition-colors text-sm"
-                >
-                  Behance
-                </a>
-              </li>
-              <li>
-                <a 
-                  href="https://youtube.com/@thehumancenter" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="text-dark-600/70 hover:text-dark-800 transition-colors text-sm"
-                >
-                  YouTube
-                </a>
-              </li>
-              <li>
-                <a 
-                  href="mailto:chris@creativcreature.com"
-                  className="text-dark-600/70 hover:text-dark-800 transition-colors text-sm"
-                >
-                  Email
-                </a>
-              </li>
+              {socialLinks.map((link) => (
+                <li key={link.label}>
+                  <a
+                    href={link.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-dark-700 text-sm hover:text-dark-900 transition-colors"
+                  >
+                    {link.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Archive */}
+          <div>
+            <h4 className="text-xs tracking-wider text-dark-600 uppercase mb-4">
+              Archive
+            </h4>
+            <ul className="space-y-2">
+              {archiveLinks.map((link) => (
+                <li key={link.version}>
+                  <a
+                    href={link.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 text-dark-700 text-sm hover:text-dark-900 transition-colors"
+                  >
+                    <span className="text-xs font-mono text-dark-500">
+                      {link.version}
+                    </span>
+                    <span>{link.label}</span>
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
         </div>
+      </div>
 
-        {/* Bottom */}
-        <div className="pt-8 border-t border-dark-800/10 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-dark-600/50 text-xs">
-            © {currentYear} CreativCreature. All rights reserved.
-          </p>
-          <p className="text-dark-600/50 text-xs">
-            Christopher James Parker · Atlanta, GA
+      {/* Bottom bar */}
+      <div className="border-t border-dark-900/5">
+        <div className="max-w-7xl mx-auto px-6 md:px-12 py-6">
+          <p className="text-dark-500 text-xs text-center">
+            © {currentYear} Christopher James Parker. All rights reserved.
           </p>
         </div>
       </div>

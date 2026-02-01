@@ -15,87 +15,47 @@ const Home = () => {
   const isContactInView = useInView(contactRef, { once: true, margin: '-100px' })
 
   return (
-    <main>
+    <main className="bg-light-100">
       {/* Hero Section */}
       <Hero />
 
       {/* Philosophy Section */}
       <section 
         ref={philosophyRef}
-        className="section-padding bg-dark-900"
+        className="section-padding bg-light-100"
       >
-        <div className="max-w-5xl mx-auto">
+        <div className="max-w-4xl mx-auto">
           <motion.div
-            initial={{ opacity: 0, y: 40 }}
+            initial={{ opacity: 0, y: 60 }}
             animate={isPhilosophyInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+            transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
           >
-            <span className="text-accent-primary text-xs tracking-[0.3em] uppercase block mb-6">
-              Philosophy
-            </span>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-cream leading-tight mb-8">
-              AI doesn't replace creativity—
-              <br />
-              <span className="gradient-text">it amplifies it.</span>
-            </h2>
-            <div className="grid md:grid-cols-2 gap-8">
-              <p className="text-cream/60 leading-relaxed">
-                As an AI-Augmented Creative Director, I've embraced artificial intelligence 
-                not as a replacement for human creativity, but as its most powerful amplifier. 
-                Where traditional workflows might take weeks, AI partnerships allow for 
-                exploration at unprecedented scale and speed.
-              </p>
-              <p className="text-cream/60 leading-relaxed">
-                The result isn't less human—it's more. By offloading the mechanical to machines, 
-                we free ourselves to focus on what matters: strategy, emotion, meaning. 
-                The vision remains human. The execution becomes superhuman.
-              </p>
-            </div>
-          </motion.div>
-          
-          <motion.div
-            className="mt-16 flex flex-wrap gap-6"
-            initial={{ opacity: 0 }}
-            animate={isPhilosophyInView ? { opacity: 1 } : {}}
-            transition={{ delay: 0.4, duration: 0.8 }}
-          >
-            {['Brand Strategy', 'Web Design', 'SaaS Products', 'Event Design', 'AI Art Direction'].map((service, i) => (
-              <span 
-                key={service}
-                className="px-6 py-3 border border-dark-600 text-cream/60 text-sm tracking-wide hover:border-accent-primary hover:text-accent-primary transition-colors duration-300"
-                style={{ transitionDelay: `${i * 50}ms` }}
-              >
-                {service}
-              </span>
-            ))}
+            <p className="text-xl md:text-2xl lg:text-3xl text-dark-800 leading-relaxed text-center">
+              AI doesn't replace creativity—<em>it amplifies it</em>. 
+              As an AI-Augmented Creative Director, I partner with artificial intelligence 
+              to explore possibilities at unprecedented scale, while keeping human vision 
+              at the center of every decision.
+            </p>
           </motion.div>
         </div>
       </section>
 
       {/* Work Section */}
-      <section id="work" className="section-padding bg-dark-800">
+      <section id="work" className="section-padding bg-light-100">
         <div className="max-w-7xl mx-auto">
           <motion.div
-            className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16"
-            initial={{ opacity: 0, y: 20 }}
+            className="mb-20"
+            initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
+            transition={{ duration: 0.8 }}
           >
-            <div>
-              <span className="text-accent-primary text-xs tracking-[0.3em] uppercase block mb-4">
-                Selected Work
-              </span>
-              <h2 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-cream">
-                Case Studies
-              </h2>
-            </div>
-            <p className="text-cream/50 max-w-md md:text-right">
-              A curated selection of brand transformations and AI-driven creative explorations.
-            </p>
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-dark-900 text-center">
+              Selected Work
+            </h2>
           </motion.div>
 
-          <div className="space-y-12 md:space-y-16">
+          <div className="space-y-24 md:space-y-32">
             {caseStudies.map((study, index) => (
               <CaseStudyCard
                 key={study.slug}
@@ -115,46 +75,43 @@ const Home = () => {
       <section 
         id="about" 
         ref={aboutRef}
-        className="section-padding bg-dark-900"
+        className="section-padding bg-light-200"
       >
-        <div className="max-w-7xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-start">
             <motion.div
-              initial={{ opacity: 0, x: -40 }}
-              animate={isAboutInView ? { opacity: 1, x: 0 } : {}}
-              transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+              initial={{ opacity: 0, y: 40 }}
+              animate={isAboutInView ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
             >
-              <span className="text-accent-primary text-xs tracking-[0.3em] uppercase block mb-6">
+              <h2 className="text-4xl md:text-5xl font-display font-bold text-dark-900 mb-8">
                 About
-              </span>
-              <h2 className="text-4xl md:text-5xl font-display font-bold text-cream mb-8">
-                Christopher James Parker
               </h2>
-              <div className="space-y-6 text-cream/60">
-                <p className="text-lg">
-                  I'm a creative director, designer, and technologist with a 
-                  decade of experience building brands that matter.
+
+              <div className="space-y-6 text-dark-700">
+                <p className="text-lg leading-relaxed">
+                  I'm a creative director, designer, and technologist with over a decade 
+                  of experience building brands that matter.
                 </p>
-                <p>
-                  My journey has taken me from the halls of SCAD to the 
-                  innovation labs at MELT, with a Gates Millennium Scholarship 
-                  providing the foundation. Along the way, I've developed a 
-                  unique practice that sits at the intersection of traditional 
+                <p className="leading-relaxed">
+                  My journey has taken me from SCAD (Magna Cum Laude) to innovation labs 
+                  at MELT, with a Gates Millennium Scholarship providing the foundation. 
+                  I've developed a unique practice at the intersection of traditional 
                   design craft and emerging AI capabilities.
                 </p>
-                <p>
-                  Today, I work with forward-thinking companies who understand 
-                  that the future of creativity is collaborative—human vision 
-                  amplified by artificial intelligence.
+                <p className="leading-relaxed">
+                  Today, I work with forward-thinking companies who understand that 
+                  the future of creativity is collaborative—human vision amplified 
+                  by artificial intelligence.
                 </p>
               </div>
               
               {/* Credentials */}
-              <div className="mt-12 flex flex-wrap gap-4">
-                {['SCAD Graduate', 'Gates Scholar', 'MELT Alumni'].map((cred) => (
+              <div className="mt-10 flex flex-wrap gap-3">
+                {['SCAD Magna Cum Laude', 'Gates Millennium Scholar', 'MELT Senior Art Director'].map((cred) => (
                   <span 
                     key={cred}
-                    className="px-4 py-2 bg-dark-800 text-cream/50 text-xs tracking-wide"
+                    className="px-4 py-2 border border-dark-900/10 text-dark-600 text-xs tracking-wider"
                   >
                     {cred}
                   </span>
@@ -163,30 +120,29 @@ const Home = () => {
             </motion.div>
 
             <motion.div
-              className="relative"
-              initial={{ opacity: 0, x: 40 }}
-              animate={isAboutInView ? { opacity: 1, x: 0 } : {}}
-              transition={{ duration: 0.8, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
+              initial={{ opacity: 0, y: 40 }}
+              animate={isAboutInView ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 1, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
             >
-              {/* Stats grid */}
-              <div className="grid grid-cols-2 gap-6">
+              {/* Stats */}
+              <div className="grid grid-cols-2 gap-8">
                 {[
                   { number: '10+', label: 'Years Experience' },
                   { number: '50+', label: 'Projects Delivered' },
-                  { number: '2.7K', label: 'AI Artworks Created' },
+                  { number: '2.7K', label: 'AI Artworks' },
                   { number: '∞', label: 'Ideas Explored' },
                 ].map((stat, i) => (
                   <motion.div
                     key={stat.label}
-                    className="p-8 bg-dark-800 border border-dark-600 hover:border-accent-primary/30 transition-colors duration-300"
+                    className="text-center lg:text-left"
                     initial={{ opacity: 0, y: 20 }}
                     animate={isAboutInView ? { opacity: 1, y: 0 } : {}}
                     transition={{ delay: 0.4 + i * 0.1, duration: 0.6 }}
                   >
-                    <p className="text-4xl md:text-5xl font-display font-bold gradient-text mb-2">
+                    <p className="text-5xl md:text-6xl font-display font-bold text-dark-900 mb-2">
                       {stat.number}
                     </p>
-                    <p className="text-cream/40 text-sm tracking-wide">
+                    <p className="text-dark-600 text-sm tracking-wider">
                       {stat.label}
                     </p>
                   </motion.div>
@@ -201,36 +157,30 @@ const Home = () => {
       <section 
         id="contact" 
         ref={contactRef}
-        className="section-padding bg-dark-800"
+        className="section-padding bg-light-100"
       >
-        <div className="max-w-4xl mx-auto text-center">
+        <div className="max-w-3xl mx-auto text-center">
           <motion.div
-            initial={{ opacity: 0, y: 40 }}
+            initial={{ opacity: 0, y: 60 }}
             animate={isContactInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+            transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
           >
-            <span className="text-accent-primary text-xs tracking-[0.3em] uppercase block mb-6">
-              Get in Touch
-            </span>
-            <h2 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold text-cream mb-8">
-              Let's create
-              <br />
-              <span className="gradient-text">the extraordinary.</span>
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-dark-900 mb-8">
+              Let's create together.
             </h2>
-            <p className="text-cream/50 text-lg mb-12 max-w-2xl mx-auto">
+            
+            <p className="text-dark-600 text-lg mb-12 max-w-xl mx-auto">
               Whether you're looking to transform your brand, launch a new venture, 
-              or explore the creative possibilities of AI—I'd love to hear from you.
+              or explore AI's creative possibilities—I'd love to hear from you.
             </p>
-            <motion.a
+
+            <a
               href="mailto:hello@creativcreature.com"
-              className="inline-flex items-center gap-4 px-8 py-4 bg-accent-primary text-dark-900 font-semibold tracking-wide hover:bg-accent-glow transition-colors duration-300"
-              whileHover={{ scale: 1.02 }}
-              whileTap={{ scale: 0.98 }}
+              className="inline-block px-10 py-5 bg-dark-900 text-light-100 font-medium tracking-wide transition-all duration-300 hover:bg-dark-800"
               data-cursor-hover
             >
-              <span>Start a Conversation</span>
-              <span>→</span>
-            </motion.a>
+              Start a Conversation
+            </a>
           </motion.div>
         </div>
       </section>

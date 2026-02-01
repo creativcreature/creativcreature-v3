@@ -1,90 +1,123 @@
-import { useEffect, useRef } from 'react'
+import { useEffect, useState } from 'react'
+import Particles, { initParticlesEngine } from '@tsparticles/react'
+import { loadSlim } from '@tsparticles/slim'
+import type { ISourceOptions } from '@tsparticles/engine'
 
-const Particles = () => {
-  const canvasRef = useRef<HTMLCanvasElement>(null)
+const ParticlesBackground = () => {
+  const [init, setInit] = useState(false)
 
   useEffect(() => {
-    const canvas = canvasRef.current
-    if (!canvas) return
-
-    const ctx = canvas.getContext('2d')
-    if (!ctx) return
-
-    const resize = () => {
-      canvas.width = window.innerWidth
-      canvas.height = window.innerHeight
-    }
-    resize()
-    window.addEventListener('resize', resize)
-
-    // Particles
-    const particles: { x: number; y: number; vx: number; vy: number; size: number; opacity: number }[] = []
-    const particleCount = 50
-
-    for (let i = 0; i < particleCount; i++) {
-      particles.push({
-        x: Math.random() * canvas.width,
-        y: Math.random() * canvas.height,
-        vx: (Math.random() - 0.5) * 0.5,
-        vy: (Math.random() - 0.5) * 0.5,
-        size: Math.random() * 2 + 1,
-        opacity: Math.random() * 0.5 + 0.1
-      })
-    }
-
-    let animationId: number
-
-    const animate = () => {
-      ctx.clearRect(0, 0, canvas.width, canvas.height)
-
-      particles.forEach(particle => {
-        particle.x += particle.vx
-        particle.y += particle.vy
-
-        if (particle.x < 0 || particle.x > canvas.width) particle.vx *= -1
-        if (particle.y < 0 || particle.y > canvas.height) particle.vy *= -1
-
-        ctx.beginPath()
-        ctx.arc(particle.x, particle.y, particle.size, 0, Math.PI * 2)
-        ctx.fillStyle = `rgba(201, 169, 98, ${particle.opacity})`
-        ctx.fill()
-      })
-
-      // Draw lines between close particles
-      particles.forEach((p1, i) => {
-        particles.slice(i + 1).forEach(p2 => {
-          const dx = p1.x - p2.x
-          const dy = p1.y - p2.y
-          const dist = Math.sqrt(dx * dx + dy * dy)
-          
-          if (dist < 150) {
-            ctx.beginPath()
-            ctx.moveTo(p1.x, p1.y)
-            ctx.lineTo(p2.x, p2.y)
-            ctx.strokeStyle = `rgba(201, 169, 98, ${0.1 * (1 - dist / 150)})`
-            ctx.stroke()
-          }
-        })
-      })
-
-      animationId = requestAnimationFrame(animate)
-    }
-
-    animate()
-
-    return () => {
-      window.removeEventListener('resize', resize)
-      cancelAnimationFrame(animationId)
-    }
+    initParticlesEngine(async (engine) => {
+      await loadSlim(engine)
+    }).then(() => {
+      setInit(true)
+    })
   }, [])
 
+  const options: ISourceOptions = {
+    fullScreen: false,
+    background: {
+      color: {
+        value: 'transparent',
+      },
+    },
+    fpsLimit: 60,
+    interactivity: {
+      events: {
+        onHover: {
+          enable: true,
+          mode: 'grab',
+        },
+        resize: {
+          enable: true,
+        },
+      },
+      modes: {
+        grab: {
+          distance: 150,
+          links: {
+            opacity: 0.3,
+            color: '#c9a962',
+          },
+        },
+      },
+    },
+    particles: {
+      color: {
+        value: ['#c9a962', '#d4af37', '#8b7355'],
+      },
+      links: {
+        color: '#c9a962',
+        distance: 150,
+        enable: true,
+        opacity: 0.1,
+        width: 1,
+      },
+      move: {
+        direction: 'none',
+        enable: true,
+        outModes: {
+          default: 'bounce',
+        },
+        random: true,
+        speed: 0.5,
+        straight: false,
+        attract: {
+          enable: true,
+          rotate: {
+            x: 600,
+            y: 1200,
+          },
+        },
+      },
+      number: {
+        density: {
+          enable: true,
+          width: 1920,
+          height: 1080,
+        },
+        value: 60,
+      },
+      opacity: {
+        value: {
+          min: 0.1,
+          max: 0.5,
+        },
+        animation: {
+          enable: true,
+          speed: 0.5,
+          sync: false,
+        },
+      },
+      shape: {
+        type: 'circle',
+      },
+      size: {
+        value: {
+          min: 1,
+          max: 3,
+        },
+        animation: {
+          enable: true,
+          speed: 2,
+          sync: false,
+        },
+      },
+    },
+    detectRetina: true,
+  }
+
+  if (!init) {
+    return null
+  }
+
   return (
-    <canvas
-      ref={canvasRef}
-      className="absolute inset-0 pointer-events-none z-0"
-      style={{ opacity: 0.6 }}
+    <Particles
+      id="tsparticles"
+      className="absolute inset-0 z-0"
+      options={options}
     />
   )
 }
 
-export default Particles
+export default ParticlesBackground
