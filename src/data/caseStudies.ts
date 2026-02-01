@@ -22,118 +22,552 @@ export interface CaseStudy {
 }
 
 export const caseStudies: CaseStudy[] = [
-  // MELT - REAL PROJECT
+  // ═══════════════════════════════════════════════════════════════
+  // REAL PAID WORK - MAJOR CLIENTS
+  // ═══════════════════════════════════════════════════════════════
+
+  // AFLAC X FINAL FOUR
   {
     id: '1',
-    slug: 'melt-agency',
-    title: 'MELT',
-    client: 'MELT Agency',
-    category: 'AI Strategy & Creative Direction',
-    year: '2018-2024',
-    tags: ['Senior Art Director', 'AI Integration', 'Brand Builds', 'Agency Innovation'],
-    description: 'Pioneering AI-augmented creative workflows at a forward-thinking Atlanta agency.',
-    heroImage: '/images/real-work/melt-landing-hero.jpg',
-    thumbnail: '/images/real-work/melt-landing-hero.jpg',
-    color: '#FF6B35',
+    slug: 'aflac-final-four',
+    title: 'Aflac x Final Four',
+    client: 'Aflac / MELT Atlanta',
+    category: 'Experiential Design & Brand Activation',
+    year: 'April 2022',
+    tags: ['Art Direction', 'Graphic Design', 'Brand Strategy', 'App Design', 'Environmental Graphics', 'Event Design'],
+    description: 'The House of the Unexpected: A full experiential activation for March Madness Final Four 2022 in New Orleans.',
+    heroImage: '/images/original/aflac_header.jpg',
+    thumbnail: '/images/original/home_aflac.png',
+    color: '#00A3E0',
     featured: true,
     type: 'project',
-    overview: `Six years leading creative direction at MELT, an Atlanta-based agency known for bold brand work. During my tenure, I evolved from Senior Art Director to AI Strategy lead, pioneering the integration of generative tools into traditional agency workflows while delivering work for major clients.`,
-    challenge: `Agencies were slow to adopt AI, viewing it as a threat rather than opportunity. The challenge was dual: continue delivering exceptional traditional creative work while simultaneously proving that AI could enhance—not replace—human creativity. Needed to bring skeptical clients and teammates along on the journey.`,
-    approach: `Led by example. Started using AI tools in my own workflow first—mood boarding with Midjourney, concepting with ChatGPT, prototyping with generative design tools. Documented everything. When the results spoke for themselves, created internal presentations and workshops to train the broader team.
+    overview: `A comprehensive brand activation for Aflac at the NCAA Final Four Fan Fest in New Orleans. We created "The House of the Unexpected" - an immersive walkthrough experience that educated consumers about supplemental insurance while delivering memorable engagement.`,
+    challenge: `Consumers are unaware that their health insurance doesn't cover everything. We found an opportunity to educate them on how Aflac can help close that gap with those unexpected medical bills - before the pain hits their wallet. Anchoring in the TVC and knowing that majority of accidents happen in and around the house, we developed our experience to reflect how Aflac can make sure an unexpected incident doesn't have an unfortunate outcome on your bank account.`,
+    approach: `The inspiration was pulled from New Orleans' local environment. Mardi Gras is a major cultural aspect of the city, and we drew inspiration from the 'House Floats' that became popular city-wide during the pandemic. New Orleans residents dressed their houses like the floats used during the Mardi Gras parade. Using this as a structural basis, we incorporated the idea of a fun house to create a moment of "unexpectedness."
 
-Key initiatives:
-• Created agency's first AI workflow documentation
-• Led client presentations on AI-augmented creative
-• Developed internal training program for creative team
-• Built proof-of-concept projects demonstrating AI value`,
-    solution: `Established MELT as an AI-forward agency while maintaining creative excellence. The AI integration reduced concepting time by 60% while actually increasing creative exploration—we could show clients 10x more directions in the same timeframe.
+We also developed an AR scavenger hunt where consumers found various possible hazards throughout the home environment, earning points and educational copy about how Aflac covers said hazard.`,
+    solution: `The experience utilized commercial spots as the foundation for learning about the brand. We created the Aflac House of the Unexpected with two things in mind: making a structure that was eye-catching to draw consumers in, and creating a walkthrough experience that made fans feel as if they were walking through an actual Aflac commercial while being educated about the brand.
 
-Deliverables across tenure:
-• Led creative on 50+ brand campaigns
-• Developed AI strategy framework adopted agency-wide
-• Trained 15+ creatives on AI tools
-• Created client-facing AI capability presentations`,
+Deliverables included brand ambassador uniforms, environmental graphics, AR app development, event design, and video/photography documentation.`,
     results: [
-      'Reduced concepting phase by 60%',
-      '10x increase in creative directions per project',
-      'Agency adopted AI tools across all departments',
-      'Featured in industry discussions on AI in advertising'
+      'Thousands of Final Four attendees engaged',
+      'AR experience drove educational engagement',
+      'Brand awareness significantly increased',
+      'Successful paid activation for MELT Atlanta'
+    ],
+    gallery: [
+      '/images/original/aflac_header.jpg',
+      '/images/original/aflac_logo.jpg',
+      '/images/original/aflac_influences1.jpg',
+      '/images/original/aflac_process1.jpg',
+      '/images/original/aflac_process2.jpg',
+      '/images/original/aflac_footprint.jpg',
+      '/images/original/aflac_uniforms.jpg',
+      '/images/original/aflac_ar1.jpg',
+      '/images/original/aflac_event.jpg'
+    ]
+  },
+
+  // GHIRARDELLI
+  {
+    id: '2',
+    slug: 'ghirardelli',
+    title: 'Ghirardelli Summer S\'mores Tour',
+    client: 'Ghirardelli / MELT Atlanta',
+    category: 'Brand Activation & Event Design',
+    year: 'Summer 2022',
+    tags: ['Logo Design', 'Apparel Design', 'Branding', 'Photography', 'Video'],
+    description: 'A traveling s\'mores experience touring destination spots across the country.',
+    heroImage: '/images/original/home_ghirardelli.png',
+    thumbnail: '/images/original/home_ghirardelli.png',
+    color: '#8B4513',
+    featured: true,
+    type: 'project',
+    overview: `The Ghirardelli S'more Summer 2022 Tour was a brand awareness event activation campaign for MELT Atlanta. The ask was to create an event activation that could tour to various "destination" spots throughout the country to raise consumer awareness about how Ghirardelli Makes S'mores a Bite Better.`,
+    challenge: `Create a memorable, shareable experience that highlights Ghirardelli's unique caramel-centered chocolate product while touring multiple locations with consistent brand impact.`,
+    approach: `We created a tour utilizing a partnership with Airstream and combined elements of roadtripping, camping, and of course, s'mores. We decided to utilize solo stoves to emulate a campfire and allow consumers to make their own s'mores on the spot!`,
+    solution: `I created Brand Ambassador uniforms with a California rustic flair, as well as patches and stickers as giveaways. I also created the Summer Tour Logo used across social media and the Ghirardelli website. In addition to design work, I did photography and videography to capture consumers enjoying the experience and promote the tour.`,
+    results: [
+      'Multi-city tour successfully executed',
+      'Summer Tour branding adopted company-wide',
+      'Photo/video content used in marketing',
+      'Increased brand awareness at destination markets'
     ],
     gallery: []
   },
 
-  // CAPTAIN PLANET FOUNDATION - REAL PROJECT  
+  // PUBLIX
   {
-    id: '2',
+    id: '3',
+    slug: 'publix',
+    title: 'Publix Partnership Pitch',
+    client: 'Publix / MELT Atlanta',
+    category: 'Pitch & Presentation Design',
+    year: '2020',
+    tags: ['Pitch Deck', 'Presentation Design', 'Brand Strategy', 'Partnership'],
+    description: 'A partnership pitch presentation to the largest employee-owned supermarket chain in the United States.',
+    heroImage: '/images/original/home_publix.png',
+    thumbnail: '/images/original/home_publix.png',
+    color: '#3D8B37',
+    featured: true,
+    type: 'project',
+    overview: `A partnership pitch presentation developed for Publix, the largest and fastest-growing employee-owned supermarket chain in the United States.`,
+    challenge: `Develop a compelling partnership pitch that communicates value proposition to a major national retailer with established brand guidelines and high expectations.`,
+    approach: `Strategic positioning focused on mutual brand alignment and market opportunity, supported by clean, professional presentation design that respected Publix's established visual identity.`,
+    solution: `A comprehensive pitch deck that told a compelling story about partnership potential while maintaining the professional standards expected by a Fortune 500 company.`,
+    results: [
+      'Successfully presented to Publix stakeholders',
+      'Professional presentation framework established',
+      'Template created for future major pitches'
+    ],
+    gallery: []
+  },
+
+  // CORKY'S MEMPHIS
+  {
+    id: '4',
+    slug: 'corkys-memphis',
+    title: 'Corky\'s Memphis',
+    client: 'Corky\'s BBQ / MELT Atlanta',
+    category: 'Brand Refresh & Menu Design',
+    year: 'Nov 2018 – Mar 2019',
+    tags: ['Graphic Design', 'Brand Strategy', 'Logo Development', 'Menu Design', 'Packaging', 'Environmental Graphics'],
+    description: 'Modernizing a world-famous Memphis BBQ brand while honoring its authentic roots.',
+    heroImage: '/images/original/home_corkys.png',
+    thumbnail: '/images/original/home_corkys.png',
+    color: '#8B0000',
+    featured: true,
+    type: 'project',
+    overview: `Corky's, a world famous B-B-Q joint in Memphis, TN needed to modernize its brand. This meant refreshing the logo, revising the menus, and putting together a full marketing campaign to reintroduce Corky's to a new generation, while still honoring the customers that helped build the company.`,
+    challenge: `The restaurant's image was very 80's kitsch. The logo was not extremely legible, and overall the brand was very bland. We needed to modernize while maintaining the authentic smokehouse feel that made Corky's famous.`,
+    approach: `Corky's is a legitimate smokehouse BBQ joint with authentic Memphis style, and our approach was to highlight this authenticity by drawing reference from smokehouse staples such as parchment papers and woods. We used texture as a driving, grounding, and uniting design element, while emphasizing boldness and hierarchy for menus and branded visuals.`,
+    solution: `The logo was updated with improved legibility. I drove a large portion of the visual aesthetic - rustic, bold typography to drive home the earthy, smokehouse feel. Red was used as an impact color. Wood and parchment textures paid homage to the sit-down restaurant experience.
+
+Deliverables included refreshed logo, menu designs, gift cards, business cards, and environmental graphics.`,
+    results: [
+      'Complete brand refresh executed',
+      'Menu system redesigned',
+      'Environmental graphics updated across locations',
+      'Brand positioned for new generation of customers'
+    ],
+    gallery: [
+      '/images/original/corky__header.png',
+      '/images/original/corky__barmenu.jpg',
+      '/images/original/corky__bizcard.jpg',
+      '/images/original/corky__giftcard.jpg'
+    ]
+  },
+
+  // CAPTAIN PLANET FOUNDATION
+  {
+    id: '5',
     slug: 'captain-planet-foundation',
     title: 'Captain Planet Foundation',
     client: 'Captain Planet Foundation',
-    category: 'Nonprofit Brand & Digital',
+    category: 'Nonprofit Brand Identity',
     year: '2013-2017',
-    tags: ['Creative Direction', 'Brand Identity', 'Environmental', 'Nonprofit'],
-    description: 'Shaping the visual identity of an iconic environmental foundation during a pivotal growth period.',
-    heroImage: '/images/case-studies/human-center-01.png',
-    thumbnail: '/images/case-studies/human-center-01.png',
+    tags: ['Creative Direction', 'Brand Identity', 'Environmental', 'Nonprofit', 'Web Design'],
+    description: 'Shaping the visual identity of an iconic environmental foundation.',
+    heroImage: '/images/original/cpf_homepage_fullscreen.png',
+    thumbnail: '/images/original/home_cpf.png',
     color: '#22C55E',
     featured: true,
     type: 'project',
-    overview: `The Captain Planet Foundation carries forward the legacy of the iconic animated series, funding environmental education programs in schools across America. I joined during a pivotal growth period, helping shape their visual identity and digital presence as they expanded their reach.`,
-    challenge: `The foundation needed to honor its nostalgic roots while appealing to modern educators, donors, and a new generation of young environmentalists. The brand had to feel both established and forward-looking—credible enough for major donors, accessible enough for elementary schools.`,
-    approach: `Balanced reverence for the Captain Planet legacy with contemporary design sensibilities. Studied how other heritage brands had modernized successfully. Created materials that worked across wildly different contexts—from school cafeterias to corporate boardrooms to environmental conferences.
+    overview: `I had the privilege to work on the core identity for this non-profit whose namesake is the iconic 1990's cartoon. The Captain Planet Foundation carries forward the legacy, funding environmental education programs in schools across America.`,
+    challenge: `The foundation needed to honor its nostalgic roots while appealing to modern educators, donors, and a new generation of young environmentalists. The brand had to feel both established and forward-looking.`,
+    approach: `Balanced reverence for the Captain Planet legacy with contemporary design sensibilities. Created materials that worked across wildly different contexts—from school cafeterias to corporate boardrooms to environmental conferences.`,
+    solution: `Developed a cohesive visual system that bridged generations. The work appeared across school materials, donor communications, event collateral, and digital platforms.
 
-Design principles:
-• Respect the legacy, don't exploit it
-• Make environmental action feel achievable, not overwhelming
-• Design for educators first—they're the real heroes
-• Every touchpoint reinforces the mission`,
-    solution: `Developed a cohesive visual system that bridged generations. The work appeared across school materials, donor communications, event collateral, and digital platforms. Focused on making environmental education feel exciting and empowering rather than doom-and-gloom.
-
-Deliverables:
-• Refreshed brand guidelines
-• School program materials and toolkits
-• Donor communication templates
-• Event collateral and environmental design
-• Digital platform design`,
+Deliverables included brand guidelines, website design, school program materials, and donor communication templates.`,
     results: [
       'Supported foundation growth initiatives',
       'Materials reached thousands of schools',
-      'Donor communication redesign improved engagement',
-      'Brand system still in use today'
+      'Brand system still in use today',
+      'Website redesign improved engagement'
+    ],
+    gallery: [
+      '/images/original/cpf_homepage_fullscreen.png',
+      '/images/original/cpf_logo_full.png',
+      '/images/original/cpf_web1.png'
+    ]
+  },
+
+  // ═══════════════════════════════════════════════════════════════
+  // PERSONAL BRANDS & SIDE PROJECTS
+  // ═══════════════════════════════════════════════════════════════
+
+  // DEM GOOD VIBEZ
+  {
+    id: '6',
+    slug: 'dem-good-vibez',
+    title: 'Dem Good Vibez',
+    client: 'Personal Brand (Owner)',
+    category: 'Lifestyle Brand & E-commerce',
+    year: '2019 – Present',
+    tags: ['Brand Strategy', 'Logo Design', 'Apparel Design', 'Social Media', 'Photography', 'Illustration'],
+    description: 'A lifestyle brand spreading positivity and joy through fashionable, positive messaging.',
+    heroImage: '/images/original/home_dgv.png',
+    thumbnail: '/images/original/home_dgv.png',
+    color: '#FFD700',
+    featured: true,
+    type: 'project',
+    overview: `Dem Good Vibez started with a sticky note drawn to help a friend through a tough time. DGV is on a mission to make the world more loving & happy. We offer products that encourage community and wellbeing for individuals looking for fashionable, positive messaging in apparel and homegoods.`,
+    challenge: `Launch a lifestyle brand during COVID-19 that spreads positivity while the world is on fire. Balance wit, humor, and positive energy while keeping overhead costs low.`,
+    approach: `The design work encapsulates wit, humor, and positive energy. This expressed itself in pastel colors, fun illustrations, and quirky design elements like the smiley face with stars in its eyes. Yellow is the main color because it's bright, happy, alive—signifying the light in the darkness.`,
+    solution: `The brand has evolved, morphing into something that can be printed at low cost while maintaining design integrity. The outcome is a work in progress that will hopefully remain unfinished—always growing, always spreading good vibes.`,
+    results: [
+      'Brand launched and operating',
+      'Product line expanded',
+      'Community of supporters built',
+      'Positive impact during difficult times'
     ],
     gallery: []
   },
 
-  // AI ART: Afrofuturist Visions - REAL WORK
+  // ATLANTA MOBILE MARKET
   {
-    id: '3',
+    id: '7',
+    slug: 'atlanta-mobile-market',
+    title: 'Atlanta Mobile Market',
+    client: 'Atlanta Mobile Market (Nonprofit)',
+    category: 'Nonprofit Brand Identity',
+    year: '2018',
+    tags: ['Brand Identity', 'Logo Design', 'Nonprofit', 'Food Access', 'Community'],
+    description: 'Brand identity for a nonprofit providing food access to communities in need.',
+    heroImage: '/images/original/home_amm.png',
+    thumbnail: '/images/original/home_amm.png',
+    color: '#4CAF50',
+    featured: false,
+    type: 'project',
+    overview: `Atlanta Mobile Market is a non-profit dedicated to providing food access to communities in need across Atlanta.`,
+    challenge: `Create a brand identity that communicates care, accessibility, and community while being versatile enough for various applications from trucks to print materials.`,
+    approach: `Focus on warmth, accessibility, and the connection between fresh food and community health. Design system needed to work on mobile units as well as traditional print.`,
+    solution: `Comprehensive brand identity including logo, business cards, letterhead, and vehicle graphics. Clean, approachable design that communicates the organization's mission.`,
+    results: [
+      'Brand identity system completed',
+      'Materials deployed across organization',
+      'Consistent visual presence established'
+    ],
+    gallery: [
+      '/images/original/amm_logo.jpg',
+      '/images/original/amm_logo_long.jpg',
+      '/images/original/amm_stylescape.jpg',
+      '/images/original/amm_bizcards.jpg',
+      '/images/original/amm_bizcardsletterhead.jpg'
+    ]
+  },
+
+  // CULTURE CHEST
+  {
+    id: '8',
+    slug: 'culture-chest',
+    title: 'Culture Chest',
+    client: 'Culture Chest',
+    category: 'Apparel Brand Identity',
+    year: '2020',
+    tags: ['Brand Identity', 'Apparel Design', 'Cultural', 'Messaging'],
+    description: 'An apparel brand centering underrepresented groups through powerful messaging.',
+    heroImage: '/images/original/home_cc.png',
+    thumbnail: '/images/original/home_cc.png',
+    color: '#1A1A1A',
+    featured: false,
+    type: 'project',
+    overview: `Culture Chest is an apparel brand looking to center underrepresented groups through powerful messaging and design.`,
+    challenge: `Create brand identity and apparel designs that authentically represent underrepresented communities without appropriation or tokenism.`,
+    approach: `Deep research into cultural symbols and messaging, working closely with community members to ensure authentic representation.`,
+    solution: `Brand identity and apparel line featuring powerful, culturally-informed designs that celebrate and uplift underrepresented communities.`,
+    results: [
+      'Brand identity established',
+      'Initial apparel collection launched',
+      'Positive community reception'
+    ],
+    gallery: [
+      '/images/original/CC__header.jpg',
+      '/images/original/CC__logo.jpg',
+      '/images/original/CC__brandguide.jpg',
+      '/images/original/CC__diaspora.jpg',
+      '/images/original/CC__family.jpg',
+      '/images/original/CC__free.jpg',
+      '/images/original/CC__og.jpg',
+      '/images/original/CC__sapiosexual.jpg',
+      '/images/original/CC__tribalmark1.jpg',
+      '/images/original/CC__tribalmark2.jpg'
+    ]
+  },
+
+  // F&B ATLANTA
+  {
+    id: '9',
+    slug: 'fandb-atlanta',
+    title: 'F&B Atlanta',
+    client: 'F&B Atlanta',
+    category: 'Restaurant Brand Identity',
+    year: '2019',
+    tags: ['Brand Identity', 'Restaurant', 'French Bistro', 'Menu Design'],
+    description: 'Brand identity for a French Bistro in the heart of Buckhead, Atlanta.',
+    heroImage: '/images/original/home_fb.png',
+    thumbnail: '/images/original/home_fb.png',
+    color: '#2C3E50',
+    featured: false,
+    type: 'project',
+    overview: `A French Bistro in the heart of Buckhead, Atlanta. C'est la vie et bon appétit.`,
+    challenge: `Capture authentic French bistro ambiance while appealing to Atlanta's sophisticated Buckhead clientele.`,
+    approach: `Classic French design sensibilities with modern Southern hospitality warmth.`,
+    solution: `Brand identity that evokes Parisian charm while feeling at home in Atlanta's upscale dining scene.`,
+    results: [
+      'Brand identity completed',
+      'Menu system designed',
+      'Restaurant opened successfully'
+    ],
+    gallery: []
+  },
+
+  // VALSER
+  {
+    id: '10',
+    slug: 'valser',
+    title: 'Valser',
+    client: 'Valser',
+    category: 'Beverage Brand Identity',
+    year: '2018',
+    tags: ['Brand Identity', 'Packaging', 'Beverage', 'Premium'],
+    description: 'Swedish spring water bringing the taste of the Swiss alps to an American audience.',
+    heroImage: '/images/original/home_valser.png',
+    thumbnail: '/images/original/home_valser.png',
+    color: '#87CEEB',
+    featured: false,
+    type: 'project',
+    overview: `Swedish spring water bringing the taste of the Swiss alps to an American audience.`,
+    challenge: `Position a European premium water brand for the American market while maintaining its heritage and quality perception.`,
+    approach: `Clean, premium design that communicates purity and Alpine freshness while appealing to American consumers.`,
+    solution: `Brand positioning and visual identity that bridges European heritage with American market expectations.`,
+    results: [
+      'Brand positioning established',
+      'Visual identity developed',
+      'Market entry strategy defined'
+    ],
+    gallery: []
+  },
+
+  // HERB & LOU'S
+  {
+    id: '11',
+    slug: 'herb-and-lous',
+    title: 'Herb & Lou\'s',
+    client: 'Herb & Lou\'s',
+    category: 'Beverage Brand & Packaging',
+    year: '2019',
+    tags: ['Brand Identity', 'Packaging', 'Cocktails', 'Product Design'],
+    description: 'Infused ice cubes that make cocktails a breeze for those lacking bartending skills.',
+    heroImage: '/images/original/home_herbandlou.png',
+    thumbnail: '/images/original/home_herbandlou.png',
+    color: '#D4AF37',
+    featured: false,
+    type: 'project',
+    overview: `Infused ice cubes that make cocktails a breeze for those lacking bartending skills.`,
+    challenge: `Create approachable branding for an innovative cocktail product that appeals to both novice home bartenders and cocktail enthusiasts.`,
+    approach: `Fun, accessible design that communicates simplicity and quality without being intimidating.`,
+    solution: `Brand identity and packaging that makes premium cocktails feel achievable for everyone.`,
+    results: [
+      'Brand identity completed',
+      'Packaging design delivered',
+      'Product launched to market'
+    ],
+    gallery: []
+  },
+
+  // TRASH MASTERPIECES
+  {
+    id: '12',
+    slug: 'trash-masterpieces',
+    title: 'Trash Masterpieces',
+    client: 'Personal Project',
+    category: 'Art Project & Brand',
+    year: '2020',
+    tags: ['Art', 'Portraits', 'Experimental', 'Personal'],
+    description: '$5 Portraits, for 5 minutes worth of time. Pay per minute.',
+    heroImage: '/images/original/home_tm.png',
+    thumbnail: '/images/original/home_tm.png',
+    color: '#FF69B4',
+    featured: false,
+    type: 'project',
+    overview: `$5 Portraits, for 5 minutes worth of time. Pay per minute. An experimental art project exploring value, time, and portraiture.`,
+    challenge: `Create an art project that questions traditional notions of artistic value while remaining accessible and engaging.`,
+    approach: `Simple pricing model ($1/minute) creates transparency and accessibility while the "trash" framing sets appropriate expectations and adds humor.`,
+    solution: `A unique portrait service that democratizes commissioned art while maintaining creative integrity.`,
+    results: [
+      'Numerous portraits completed',
+      'Concept proved viable',
+      'Positive reception from participants'
+    ],
+    gallery: []
+  },
+
+  // ═══════════════════════════════════════════════════════════════
+  // STUDENT & EARLY CAREER WORK
+  // ═══════════════════════════════════════════════════════════════
+
+  // KILLER CONVENIENCE
+  {
+    id: '13',
+    slug: 'killer-convenience',
+    title: 'Killer Convenience',
+    client: 'SCAD Senior Project',
+    category: 'Social Impact Design',
+    year: '2014',
+    tags: ['Social Impact', 'Food Deserts', 'Education', 'Campaign'],
+    description: 'A passion project addressing the growing epidemic of food deserts in the United States.',
+    heroImage: '/images/original/home_killerconvenience.png',
+    thumbnail: '/images/original/home_killerconvenience.png',
+    color: '#DC143C',
+    featured: false,
+    type: 'project',
+    overview: `Killer Convenience is a passion project I created during my senior year at the Savannah College of Art and Design concerning the growing epidemic of food deserts in the United States.`,
+    challenge: `Raise awareness about food deserts in an engaging way that motivates action and education.`,
+    approach: `Use striking visuals and clear messaging to communicate the severity of the food desert problem.`,
+    solution: `An awareness campaign that educates the public about food deserts and their impact on community health.`,
+    results: [
+      'Senior thesis completed',
+      'Campaign materials developed',
+      'Foundation for future food access work'
+    ],
+    gallery: []
+  },
+
+  // FOX IN A BOX
+  {
+    id: '14',
+    slug: 'fox-in-a-box',
+    title: 'Fox in a Box',
+    client: 'Fox Theatre / SCAD',
+    category: 'Educational Outreach Design',
+    year: '2014',
+    tags: ['Education', 'Youth Outreach', 'Collaboration', 'Theatre'],
+    description: 'Educational outreach program engaging Atlanta youth through the Fox Theatre.',
+    heroImage: '/images/original/home_fox.png',
+    thumbnail: '/images/original/home_fox.png',
+    color: '#B8860B',
+    featured: false,
+    type: 'project',
+    overview: `In 2014, I was given the opportunity to participate in a collaborative class at SCAD, working with the Fox Theater to create an educational outreach program to engage youth throughout Atlanta.`,
+    challenge: `Design an educational program that makes theatre accessible and exciting for young people from diverse backgrounds.`,
+    approach: `Collaborate with the Fox Theatre and fellow students to develop engaging, age-appropriate content.`,
+    solution: `An educational outreach program that brings the magic of theatre to Atlanta's youth.`,
+    results: [
+      'Program developed and launched',
+      'Youth engagement achieved',
+      'Successful collaboration with Fox Theatre'
+    ],
+    gallery: []
+  },
+
+  // HOMEGROWN GARDEN
+  {
+    id: '15',
+    slug: 'homegrown-garden',
+    title: 'Homegrown Garden',
+    client: 'SCAD Student Project',
+    category: 'Social Impact Design',
+    year: '2013',
+    tags: ['Social Impact', 'Food Deserts', 'Education', 'Gardening'],
+    description: 'Raising awareness and educating the public about growing food at home.',
+    heroImage: '/images/original/home_homegrown.png',
+    thumbnail: '/images/original/home_homegrown.png',
+    color: '#228B22',
+    featured: false,
+    type: 'project',
+    overview: `Homegrown is a student project created to address Food Deserts in the United States by raising awareness and educating the public about growing food at home.`,
+    challenge: `Make home gardening feel accessible and relevant to people living in food deserts.`,
+    approach: `Educational approach focusing on practical, achievable steps for growing food at home.`,
+    solution: `Educational materials that empower individuals to grow their own food regardless of their circumstances.`,
+    results: [
+      'Educational materials created',
+      'Awareness raised about food deserts',
+      'Foundation for continued food access advocacy'
+    ],
+    gallery: []
+  },
+
+  // EBONY MARCHELLE
+  {
+    id: '16',
+    slug: 'ebony-marchelle',
+    title: 'Ebony Marchelle',
+    client: 'Ebony Marchelle',
+    category: 'Personal Brand Identity',
+    year: '2019',
+    tags: ['Personal Branding', 'Luxury', 'Fashion Styling', 'Women'],
+    description: 'Brand identity for a luxury stylist helping women create purpose-driven personal brands.',
+    heroImage: '/images/original/home_ebony.png',
+    thumbnail: '/images/original/home_ebony.png',
+    color: '#9370DB',
+    featured: false,
+    type: 'project',
+    overview: `Ebony Marchelle is a women's luxury stylist focusing on helping women create and maintain a purpose-driven image and personal brand that will aid in the achievement of their personal and professional goals.`,
+    challenge: `Create a brand identity that communicates luxury, empowerment, and professionalism for a personal styling business.`,
+    approach: `Elegant, sophisticated design that appeals to professional women seeking to elevate their personal brand.`,
+    solution: `A refined brand identity that positions Ebony as a premium personal styling service.`,
+    results: [
+      'Brand identity completed',
+      'Marketing materials designed',
+      'Business launched successfully'
+    ],
+    gallery: []
+  },
+
+  // KAPRIUS
+  {
+    id: '17',
+    slug: 'kaprius',
+    title: 'Kaprius',
+    client: 'Kaprius',
+    category: 'Artisan Brand & Packaging',
+    year: '2018',
+    tags: ['Brand Identity', 'Packaging', 'Artisan', 'Honey'],
+    description: 'A honey brand representing an affinity for craftsmanship and artisan goods.',
+    heroImage: '/images/original/home_kaprius.png',
+    thumbnail: '/images/original/home_kaprius.png',
+    color: '#DAA520',
+    featured: false,
+    type: 'project',
+    overview: `Kaprius is a honey-based brand dreamt up by two lovers. The product represents an affinity for craftsmanship and artisan goods.`,
+    challenge: `Create packaging and brand identity that communicates artisan quality and romantic origin story.`,
+    approach: `Warm, handcrafted aesthetic that tells the story of two people united by their love of quality.`,
+    solution: `Brand identity and packaging that feels personal, premium, and artisanal.`,
+    results: [
+      'Brand identity completed',
+      'Packaging designed',
+      'Product launched'
+    ],
+    gallery: []
+  },
+
+  // ═══════════════════════════════════════════════════════════════
+  // AI ART COLLECTIONS
+  // ═══════════════════════════════════════════════════════════════
+
+  // AFROFUTURIST VISIONS
+  {
+    id: '18',
     slug: 'afrofuturist-visions',
     title: 'Afrofuturist Visions',
     client: 'Personal Work',
     category: 'AI Art Direction',
     year: '2023-2024',
     tags: ['AI Art', 'Afrofuturism', 'Cultural Identity', 'Midjourney', 'Creative Direction'],
-    description: 'An ongoing exploration of Black identity and future possibilities through AI-human creative collaboration.',
+    description: 'An exploration of Black identity and future possibilities through AI-human creative collaboration.',
     heroImage: '/images/brands/portfolio-v4-images/afrofuturism/02-retro-space-warrior.png',
     thumbnail: '/images/brands/portfolio-v4-images/afrofuturism/01-cyberpunk-silhouette.png',
     color: '#8B5CF6',
     featured: true,
     type: 'gallery',
-    overview: `This series uses AI as a creative collaborator to visualize Afrofuturist themes—imagining futures where Black culture, technology, and spirituality interweave. Over 500 pieces exploring themes of identity, ancestry, and possibility.`,
-    challenge: `AI image generators weren't trained with representation in mind. Early experiments often revealed biases—defaulting to Eurocentric features, struggling with diverse skin tones, flattening cultural nuance. The challenge: guide AI toward authentic representation.`,
-    approach: `Developed a methodology for culturally-informed AI art direction:
-
-• Research: Deep study of Afrofuturist literature, art, and theory
-• Reference: Curated visual libraries of African diaspora aesthetics  
-• Refinement: Iterative prompting to overcome model biases
-• Curation: Human judgment on what resonates vs. what tokenizes
-
-Each piece starts with intention—a concept, emotion, or cultural reference point—before any generation begins.`,
-    solution: `A cohesive body of work that demonstrates AI creative direction rather than AI art generation. The human judgment—about what represents, what resonates, what transcends—is the actual art. The AI is the instrument.
-
-The collection spans portraiture, landscapes, and abstract compositions united by visual language that feels simultaneously ancient and futuristic. Golden tones, deep purples, cosmic imagery recur throughout.`,
+    overview: `This series uses AI as a creative collaborator to visualize Afrofuturist themes—imagining futures where Black culture, technology, and spirituality interweave.`,
+    challenge: `AI image generators weren't trained with representation in mind. The challenge: guide AI toward authentic representation.`,
+    approach: `Developed a methodology for culturally-informed AI art direction including research, reference curation, iterative prompting, and human curation.`,
+    solution: `A cohesive body of work demonstrating AI creative direction. The human judgment about what represents, resonates, and transcends is the actual art.`,
     results: [
       '500+ pieces in the collection',
-      'Featured on Behance with significant engagement',
+      'Featured on Behance',
       'Sparked discussions on AI and representation',
       'Methodology applicable to client work'
     ],
@@ -151,9 +585,9 @@ The collection spans portraiture, landscapes, and abstract compositions united b
     ]
   },
 
-  // AI ART: Sacred Geometries - REAL WORK
+  // SACRED GEOMETRIES
   {
-    id: '4',
+    id: '19',
     slug: 'sacred-geometries',
     title: 'Sacred Geometries',
     client: 'Personal Work',
@@ -164,26 +598,17 @@ The collection spans portraiture, landscapes, and abstract compositions united b
     heroImage: '/images/brands/portfolio-v4-images/neo-sacred/01-firebird-ornate.png',
     thumbnail: '/images/brands/portfolio-v4-images/neo-sacred/02-crystal-tree.png',
     color: '#F59E0B',
-    featured: true,
+    featured: false,
     type: 'gallery',
-    overview: `An investigation of sacred geometric patterns through AI generation—exploring how ancient mathematical forms can be reimagined through contemporary tools. The work sits at the intersection of spirituality, mathematics, and digital art.`,
-    challenge: `Sacred geometry carries deep meaning across cultures—Islamic tessellation, Hindu yantras, Celtic knots, Kemetic symbols. The challenge: create work that respects these traditions while pushing into genuinely new visual territory.`,
-    approach: `Research-driven generation:
-
-• Studied geometric patterns across cultures and traditions
-• Identified underlying mathematical principles
-• Used this knowledge to inform prompts
-• Applied human curation to select what honors vs. appropriates
-
-The goal was contemplative digital art—pieces that invite meditation rather than just visual consumption.`,
-    solution: `A collection featuring intricate patterns in rich, jewel-toned palettes. Some pieces are purely abstract; others incorporate figurative elements—hands, eyes, celestial bodies—that ground the geometry in human experience.
-
-The work has found resonance with audiences interested in spirituality, mathematics, and visual meditation.`,
+    overview: `An investigation of sacred geometric patterns through AI generation—exploring how ancient mathematical forms can be reimagined through contemporary tools.`,
+    challenge: `Sacred geometry carries deep meaning across cultures. The challenge: create work that respects these traditions while pushing into new visual territory.`,
+    approach: `Research-driven generation studying geometric patterns across cultures, identifying mathematical principles, and applying human curation.`,
+    solution: `A collection featuring intricate patterns in jewel-toned palettes, inviting meditation rather than just visual consumption.`,
     results: [
       '300+ pieces in the collection',
-      'Used as meditation visuals by practitioners',
+      'Used as meditation visuals',
       'Commissioned for album artwork',
-      'Methodology informs commercial pattern work'
+      'Methodology informs commercial work'
     ],
     gallery: [
       '/images/brands/portfolio-v4-images/neo-sacred/01-firebird-ornate.png',
@@ -199,9 +624,9 @@ The work has found resonance with audiences interested in spirituality, mathemat
     ]
   },
 
-  // AI ART: Digital Portraits - REAL WORK
+  // DIGITAL PORTRAITS
   {
-    id: '5',
+    id: '20',
     slug: 'digital-portraits',
     title: 'Digital Ancestors',
     client: 'Personal Work',
@@ -212,23 +637,16 @@ The work has found resonance with audiences interested in spirituality, mathemat
     heroImage: '/images/brands/portfolio-v4-images/digital-portraits/02-blue-essence.png',
     thumbnail: '/images/brands/portfolio-v4-images/digital-portraits/08-golden-goddess.png',
     color: '#EC4899',
-    featured: true,
+    featured: false,
     type: 'gallery',
-    overview: `"Digital Ancestors" is a meditation on heritage, memory, and the photographs that were never taken. Using AI, I've created portraits of imagined ancestors—people who might have existed in my family line but were never documented.`,
-    challenge: `Many Black families lack photographic records of their ancestors. The camera wasn't accessible; the subjects weren't deemed worthy of documentation. The challenge: create work that fills this void meaningfully—not replacing real history, but creating visual poetry about what might have been.`,
-    approach: `Each portrait begins with a story:
-• Who was this person?
-• What was their life like?
-• What did they carry forward?
-
-These narratives inform every aspect—expression, clothing, setting, lighting. The aesthetic draws from historical photography while incorporating dreamlike elements. These are clearly imaginative works, not attempts to deceive.`,
-    solution: `Portraits with a quality of dignified mystery. They feel like recovered artifacts from a parallel timeline—familiar yet impossible. Warm sepia tones give way to unexpected colors; traditional poses carry subtle surrealist touches.
-
-This series has resonated deeply with viewers who share the experience of family history gaps.`,
+    overview: `"Digital Ancestors" is a meditation on heritage, memory, and the photographs that were never taken. Using AI to create portraits of imagined ancestors.`,
+    challenge: `Many Black families lack photographic records of their ancestors. The challenge: fill this void meaningfully—not replacing history, but creating visual poetry.`,
+    approach: `Each portrait begins with a story: Who was this person? What was their life like? What did they carry forward?`,
+    solution: `Portraits with dignified mystery—recovered artifacts from a parallel timeline. Warm sepia tones giving way to unexpected colors.`,
     results: [
       '150+ portraits in the series',
-      'Exhibition interest from cultural institutions',
-      'Strong emotional resonance with viewers',
+      'Exhibition interest from institutions',
+      'Strong emotional resonance',
       'Featured in discussions about AI and memory'
     ],
     gallery: [
@@ -243,424 +661,6 @@ This series has resonated deeply with viewers who share the experience of family
       '/images/brands/portfolio-v4-images/digital-portraits/09-third-eye-vision.png',
       '/images/brands/portfolio-v4-images/digital-portraits/10-deer-spirit.png'
     ]
-  },
-
-  // THE HUMAN CENTER ARKIVE - REAL PROJECT
-  {
-    id: '6',
-    slug: 'human-center-arkive',
-    title: 'The Human Center Arkive',
-    client: 'Personal Project',
-    category: 'Documentary & Brand',
-    year: '2024',
-    tags: ['Documentary', 'YouTube', 'Storytelling', 'Memory Preservation', 'Brand'],
-    description: 'A living archive of human stories—preserving memories that would otherwise be lost to time.',
-    heroImage: '/images/real-work/arkive-hero.jpg',
-    thumbnail: '/images/real-work/arkive-hero.jpg',
-    color: '#C9A962',
-    featured: true,
-    type: 'project',
-    overview: `The Human Center Arkive is a documentary project dedicated to preserving human stories—the memories, experiences, and wisdom that exist only in the minds of those who lived them. Like Noah's Ark preserved life, the Arkive preserves legacy.`,
-    challenge: `Every day, irreplaceable stories disappear. Grandparents pass without sharing their war stories. Parents forget the small moments that shaped their children. The challenge: create a platform that captures these ephemeral human experiences before they're lost forever.`,
-    approach: `Started with family—learning to see my own mother not just as "Mom" but as Jennifer Kay Parker, a complete person with a full life I'd never thought to ask about. This personal journey became the template:
-
-• Deep listening without agenda
-• Questions that invite story, not facts
-• Space for silence and emotion
-• Preservation with dignity`,
-    solution: `A YouTube documentary series creating space for intimate storytelling. Each episode captures the rarely-told stories of ordinary people—their struggles, triumphs, regrets, and wisdom. The Arkive becomes a permanent record of human experience.
-
-48 interviews captured so far, with more in production.`,
-    results: [
-      'YouTube documentary channel launched',
-      '48 human stories preserved',
-      'Deepened personal family connections',
-      'Framework for capturing generational wisdom'
-    ],
-    gallery: []
-  },
-
-  // ATLAS PROTOCOL - CONCEPT BRAND (Fortune 500 Quality)
-  {
-    id: '7',
-    slug: 'atlas-protocol',
-    title: 'Atlas Protocol',
-    client: 'Concept Brand',
-    category: 'Enterprise Brand Identity',
-    year: '2024',
-    tags: ['Brand Identity', 'Enterprise', 'AI/ML', 'Digital Product', 'Concept Work'],
-    description: 'A complete brand identity for an enterprise AI infrastructure company. Demonstrating Fortune 500-level brand development capabilities.',
-    heroImage: '/images/brands/portfolio-v4-images/atlas-protocol/website-hero.png',
-    thumbnail: '/images/brands/portfolio-v4-images/atlas-protocol/logo-primary.png',
-    color: '#0EA5E9',
-    featured: true,
-    type: 'project',
-    overview: `Atlas Protocol represents a concept brand developed to demonstrate enterprise-level brand identity capabilities. The fictional company provides AI infrastructure and machine learning operations tools for Fortune 500 companies.
-
-This project showcases the complete brand development process—from strategic positioning to visual identity to digital product design.`,
-    challenge: `Enterprise AI companies often default to cold, technical aesthetics that fail to communicate trust and reliability. The challenge: create a brand that feels simultaneously cutting-edge and established, technical yet accessible, innovative while trustworthy.`,
-    approach: `Applied Fortune 500 brand development methodology:
-
-• Strategic Positioning: Defined market position, competitive landscape, and brand personality
-• Visual Identity System: Logo system, color palette, typography, iconography
-• Digital Product Design: Website, mobile app, social templates
-• Application Guidelines: Ensured consistency across all touchpoints`,
-    solution: `A cohesive brand identity that balances technical sophistication with approachable warmth. The visual system uses deep blues and teals suggesting depth and reliability, while geometric elements nod to the underlying data structures.
-
-Deliverables include:
-• Primary and alternate logo marks
-• Complete color system with usage guidelines
-• Mobile app interface design
-• Website hero and landing pages
-• Social media templates`,
-    results: [
-      'Complete enterprise brand identity system',
-      'Mobile app UI/UX design',
-      'Digital marketing collateral suite',
-      'Brand guidelines documentation'
-    ],
-    gallery: [
-      '/images/brands/portfolio-v4-images/atlas-protocol/logo-primary.png',
-      '/images/brands/portfolio-v4-images/atlas-protocol/logo-alt.png',
-      '/images/brands/portfolio-v4-images/atlas-protocol/color-palette.png',
-      '/images/brands/portfolio-v4-images/atlas-protocol/website-hero.png',
-      '/images/brands/portfolio-v4-images/atlas-protocol/mobile-app-screens.png',
-      '/images/brands/portfolio-v4-images/atlas-protocol/social-banner.png'
-    ]
-  },
-
-  // BLOOM COLLECTIVE - CONCEPT BRAND (Fortune 500 Quality)
-  {
-    id: '8',
-    slug: 'bloom-collective',
-    title: 'Bloom Collective',
-    client: 'Concept Brand',
-    category: 'Luxury Brand Identity',
-    year: '2024',
-    tags: ['Brand Identity', 'Luxury', 'Fashion', 'Packaging', 'Concept Work'],
-    description: 'A premium lifestyle brand identity spanning fashion, beauty, and home. Demonstrating luxury brand development at scale.',
-    heroImage: '/images/brands/portfolio-v4-images/bloom-collective/campaign-photo.png',
-    thumbnail: '/images/brands/portfolio-v4-images/bloom-collective/logo-brandmark.png',
-    color: '#D946EF',
-    featured: true,
-    type: 'project',
-    overview: `Bloom Collective is a concept luxury lifestyle brand developed to showcase comprehensive brand identity work across multiple product categories—fashion, beauty, and home goods.
-
-The project demonstrates the ability to create cohesive brand experiences that translate across diverse applications while maintaining premium positioning.`,
-    challenge: `Luxury brands require exceptional attention to detail and consistency. Every touchpoint must reinforce premium positioning. The challenge: create a brand identity flexible enough for diverse product categories while maintaining unmistakable brand recognition.`,
-    approach: `Luxury brand development process:
-
-• Brand Architecture: Defined how the master brand relates to product categories
-• Visual Language: Created a sophisticated aesthetic balancing minimalism with warmth
-• Material Considerations: Designed with premium materials and finishes in mind
-• Campaign Development: Shot editorial-style imagery that communicates brand values`,
-    solution: `A refined brand identity built on natural textures, muted earth tones, and elegant typography. The visual system works equally well on product packaging, e-commerce, editorial spreads, and retail environments.
-
-Deliverables include:
-• Brandmark and wordmark system
-• Premium packaging design
-• E-commerce platform design
-• Lookbook and campaign photography direction
-• Social media content system`,
-    results: [
-      'Complete luxury brand identity',
-      'Product packaging across categories',
-      'E-commerce UX design',
-      'Editorial campaign direction'
-    ],
-    gallery: [
-      '/images/brands/portfolio-v4-images/bloom-collective/logo-brandmark.png',
-      '/images/brands/portfolio-v4-images/bloom-collective/packaging-design.png',
-      '/images/brands/portfolio-v4-images/bloom-collective/ecommerce-mockup.png',
-      '/images/brands/portfolio-v4-images/bloom-collective/lookbook-1.png',
-      '/images/brands/portfolio-v4-images/bloom-collective/lookbook-2.png',
-      '/images/brands/portfolio-v4-images/bloom-collective/campaign-photo.png'
-    ]
-  },
-
-  // MERIDIAN STUDIO - CONCEPT BRAND (Fortune 500 Quality)
-  {
-    id: '9',
-    slug: 'meridian-studio',
-    title: 'Meridian Studio',
-    client: 'Concept Brand',
-    category: 'Creative Agency Brand',
-    year: '2024',
-    tags: ['Brand Identity', 'Agency', 'Professional Services', 'B2B', 'Concept Work'],
-    description: 'A sophisticated brand identity for a global creative consultancy. Demonstrating B2B brand development for professional services.',
-    heroImage: '/images/brands/portfolio-v4-images/meridian-studio/website-mockup.png',
-    thumbnail: '/images/brands/portfolio-v4-images/meridian-studio/logo-wordmark.png',
-    color: '#1E293B',
-    featured: true,
-    type: 'project',
-    overview: `Meridian Studio is a concept brand for a global creative consultancy serving Fortune 500 clients. The project demonstrates B2B brand development—where the brand must communicate credibility, expertise, and creative capability simultaneously.
-
-Professional services branding requires a different approach than consumer brands—the audience is sophisticated, the stakes are high, and trust is paramount.`,
-    challenge: `Creative agencies face a paradox: they must appear both highly creative AND reliably professional. Too creative risks seeming unreliable; too corporate risks appearing uninspired. The challenge: strike the perfect balance that attracts enterprise clients while showcasing creative excellence.`,
-    approach: `B2B brand development methodology:
-
-• Credibility Signals: Typography and color choices that communicate established expertise
-• Creative Proof: Subtle design details that demonstrate capability without overwhelming
-• Professional Touchpoints: Business cards, presentations, proposals designed for boardrooms
-• Digital Presence: Website that functions as both portfolio and lead generation`,
-    solution: `A refined, confident brand identity built on strong typography and restrained color use. The visual system feels established and trustworthy while subtle creative touches prove design capability.
-
-Deliverables include:
-• Wordmark and monogram system
-• Premium business card design
-• Presentation template system
-• Website design
-• Social media templates for LinkedIn focus`,
-    results: [
-      'Complete B2B brand identity',
-      'Business collateral suite',
-      'Presentation system',
-      'Professional website design'
-    ],
-    gallery: [
-      '/images/brands/portfolio-v4-images/meridian-studio/logo-wordmark.png',
-      '/images/brands/portfolio-v4-images/meridian-studio/business-cards.png',
-      '/images/brands/portfolio-v4-images/meridian-studio/website-mockup.png',
-      '/images/brands/portfolio-v4-images/meridian-studio/presentation-template.png',
-      '/images/brands/portfolio-v4-images/meridian-studio/social-template.png'
-    ]
-  },
-
-  // ═══════════════════════════════════════════════════════════════
-  // REAL WORK - WEBSITES & APPS FROM WOKEGOD.WORLD
-  // ═══════════════════════════════════════════════════════════════
-
-  // EUANGELION - REAL PROJECT
-  {
-    id: '10',
-    slug: 'euangelion',
-    title: 'Euangelion',
-    client: 'Personal Project',
-    category: 'Spiritual Tech & Web Design',
-    year: '2024',
-    tags: ['Web Design', 'Spiritual', 'React', 'Daily Devotional', 'Full Stack'],
-    description: 'A modern daily devotional platform blending ancient wisdom with contemporary digital experience.',
-    heroImage: '/images/real-work/euangelion-hero.jpg',
-    thumbnail: '/images/real-work/euangelion-hero.jpg',
-    color: '#6366F1',
-    featured: false,
-    type: 'project',
-    overview: `Euangelion reimagines the daily devotional for the digital age. The platform delivers contemplative spiritual content through a beautifully designed interface that respects the gravity of the material while making it accessible to modern seekers.`,
-    challenge: `Spiritual content online often falls into two traps: either overly corporate megachurch aesthetics or amateur blog designs. The challenge: create a digital space that feels sacred without being stuffy, modern without being shallow.`,
-    approach: `Design principles rooted in liturgical tradition:
-• Typography that invites slow reading
-• Breathing room and intentional white space
-• Color palette inspired by stained glass and iconography
-• Interactions that encourage presence, not distraction`,
-    solution: `A React-based devotional platform featuring daily readings, contemplative imagery, and a reading experience designed for reflection rather than consumption.
-
-Live at euangelion.wokegod.world`,
-    results: [
-      'Daily active users engaging with content',
-      'Positive feedback on reading experience',
-      'Template for future spiritual tech projects',
-      'Foundation for expanded content library'
-    ],
-    gallery: []
-  },
-
-  // WAKE UP MAGAZINE - REAL PROJECT
-  {
-    id: '11',
-    slug: 'wake-up-magazine',
-    title: 'Wake Up',
-    client: 'Personal Project',
-    category: 'Digital Publishing & Design',
-    year: '2024',
-    tags: ['Web Design', 'Zine', 'Publishing', 'Spirituality', 'Editorial'],
-    description: 'A digital zine for the spiritually restless—exploring faith, doubt, and everything in between.',
-    heroImage: '/images/real-work/wakeup-hero.jpg',
-    thumbnail: '/images/real-work/wakeup-hero.jpg',
-    color: '#F97316',
-    featured: false,
-    type: 'project',
-    overview: `"A Zine for the Spiritually Restless" — Wake Up is a digital publication exploring the messy middle ground of faith, doubt, deconstruction, and reconstruction.`,
-    challenge: `Traditional religious publishing feels inaccessible to questioning seekers. The design needed to signal "this is safe space for doubt" while still treating spiritual matters with appropriate weight.`,
-    approach: `Zine aesthetics meet editorial design:
-• Bold typography with magazine-quality layouts
-• Intentionally imperfect elements (torn edges, hand-drawn accents)
-• Content that asks questions rather than provides pat answers`,
-    solution: `A digital zine platform with curated articles, personal essays, and visual content that meets readers wherever they are on their spiritual journey.
-
-Live at wakeup.wokegod.world`,
-    results: [
-      'Growing readership of questioning seekers',
-      'Bridge between traditional faith and modern doubt',
-      'Platform for guest writers and perspectives'
-    ],
-    gallery: []
-  },
-
-  // MELT ECOSYSTEM - REAL PROJECT
-  {
-    id: '12',
-    slug: 'melt-ecosystem',
-    title: 'MELT Digital Ecosystem',
-    client: 'MELT Agency',
-    category: 'Agency Web Development',
-    year: '2018-2024',
-    tags: ['Web Design', 'Agency', 'Multiple Sites', 'Brand Evolution', 'Full Stack'],
-    description: 'A complete digital ecosystem for an Atlanta creative agency—from landing pages to internal tools to pitch decks.',
-    heroImage: '/images/real-work/melt-landing-hero.jpg',
-    thumbnail: '/images/real-work/melt-landing-hero.jpg',
-    color: '#FF6B35',
-    featured: false,
-    type: 'project',
-    overview: `Over six years at MELT, I built and evolved their entire digital presence—from the public-facing website through multiple iterations to internal tools and client-facing pitch platforms.`,
-    challenge: `Agency websites are notoriously difficult: they need to showcase creative capability while still functioning as legitimate business tools. Each version needed to evolve with the agency's positioning and capabilities.`,
-    approach: `Iterative development matching agency evolution:
-• V1: Establishing brand presence
-• V2: Capability showcase with case studies
-• Capes: Internal capability assessment tool
-• AI integration: Demonstrating forward-thinking positioning
-• Pitch platforms: Client-specific presentation tools`,
-    solution: `A family of interconnected sites serving different purposes:
-• meltatl.com — Public agency site
-• melt-v1, melt-v2 — Version archive
-• melt-capesite — Capability assessment
-• Pitch platforms — Client presentation tools
-
-All available through wokegod.world/melt ecosystem`,
-    results: [
-      'Multiple site versions tracking agency evolution',
-      'Internal tools adopted for client work',
-      'Pitch platforms used for major client wins',
-      'Complete agency digital infrastructure'
-    ],
-    gallery: []
-  },
-
-  // DEM GOOD VIBEZ - REAL PROJECT
-  {
-    id: '13',
-    slug: 'dem-good-vibez',
-    title: 'Dem Good Vibez',
-    client: 'Personal Project',
-    category: 'Lifestyle Brand & Web',
-    year: '2024',
-    tags: ['Web Design', 'Lifestyle', 'Community', 'Branding', 'Vibes'],
-    description: 'A lifestyle brand and community platform celebrating positive energy and authentic living.',
-    heroImage: '/images/real-work/demgoodvibez-hero.jpg',
-    thumbnail: '/images/real-work/demgoodvibez-hero.jpg',
-    color: '#10B981',
-    featured: false,
-    type: 'project',
-    overview: `Dem Good Vibez is a lifestyle brand built around the simple premise: life is better when you intentionally cultivate positive energy.`,
-    challenge: `"Good vibes" branding can easily slip into shallow toxic positivity. The challenge: create something genuinely uplifting without being dismissive of life's real difficulties.`,
-    approach: `Authentic positivity through design:
-• Warm, inviting color palette
-• Playful but not juvenile typography
-• Content that acknowledges struggle while celebrating joy`,
-    solution: `A brand and web presence serving as home base for a community focused on intentional living and positive energy.
-
-Live at demgoodvibez.wokegod.world`,
-    results: [
-      'Community platform established',
-      'Brand identity and web presence live',
-      'Foundation for lifestyle content'
-    ],
-    gallery: []
-  },
-
-  // DASH DASH - REAL PROJECT
-  {
-    id: '14',
-    slug: 'dash-dash',
-    title: 'Dash Dash',
-    client: 'Personal Project',
-    category: 'App/Tool Design',
-    year: '2024',
-    tags: ['App Design', 'Productivity', 'Tool', 'Web App'],
-    description: 'A focused productivity tool designed for getting things done without the bloat.',
-    heroImage: '/images/real-work/dashdash-hero.jpg',
-    thumbnail: '/images/real-work/dashdash-hero.jpg',
-    color: '#8B5CF6',
-    featured: false,
-    type: 'project',
-    overview: `Dash Dash is a streamlined productivity tool born from frustration with overcomplicated task managers. Sometimes you just need to dash through your list.`,
-    challenge: `Productivity apps tend toward feature creep. The challenge: stay focused on the core use case while still being useful enough to actually use.`,
-    approach: `Ruthless simplification:
-• Identify the core loop (add → do → done)
-• Remove everything that doesn't serve that loop
-• Design for speed over features`,
-    solution: `A minimal, fast productivity tool that gets out of your way and lets you work.
-
-Available at wokegod.world/dashdash/`,
-    results: [
-      'Personal productivity tool in daily use',
-      'Proof of concept for focused app design',
-      'Template for future tool projects'
-    ],
-    gallery: []
-  },
-
-  // GARAGESALE - REAL PROJECT
-  {
-    id: '15',
-    slug: 'garagesale',
-    title: 'GarageSale',
-    client: 'Personal Project',
-    category: 'E-commerce Design',
-    year: '2024',
-    tags: ['Web Design', 'E-commerce', 'Minimal', 'Marketplace'],
-    description: 'A minimal e-commerce platform proving that selling online doesn\'t need to be complicated.',
-    heroImage: '/images/real-work/garagesale-hero.jpg',
-    thumbnail: '/images/real-work/garagesale-hero.jpg',
-    color: '#78716C',
-    featured: false,
-    type: 'project',
-    overview: `GarageSale strips e-commerce down to its essentials. No bloated platforms, no feature overwhelm—just a clean way to sell things online.`,
-    challenge: `E-commerce platforms are either overly complex (Shopify learning curve) or too limited (basic listings). The challenge: find the sweet spot for simple, dignified online selling.`,
-    approach: `Design like it's 2004, build like it's 2024:
-• Focus on the product, not the platform
-• Minimal UI, maximum clarity
-• Fast loading, mobile-first`,
-    solution: `A lightweight e-commerce template that prioritizes products over platform complexity.
-
-Live at garagesale.wokegod.world`,
-    results: [
-      'Clean e-commerce template',
-      'Fast-loading minimal design',
-      'Proof of concept for simplified selling'
-    ],
-    gallery: []
-  },
-
-  // PITCHES - REAL PROJECT
-  {
-    id: '16',
-    slug: 'pitches',
-    title: 'Pitches',
-    client: 'Personal Project',
-    category: 'Presentation Platform',
-    year: '2024',
-    tags: ['Web Design', 'Presentations', 'Pitch Decks', 'Business'],
-    description: 'A platform for creating and sharing compelling pitch presentations—"$1 × 1,000,000" thinking.',
-    heroImage: '/images/real-work/pitches-hero.jpg',
-    thumbnail: '/images/real-work/pitches-hero.jpg',
-    color: '#059669',
-    featured: false,
-    type: 'project',
-    overview: `Pitches is a presentation platform built around one philosophy: every great business starts with a compelling story. The "$1 × 1,000,000" framework.`,
-    challenge: `Pitch decks are either boring corporate templates or overdesigned distractions. The challenge: create a platform that helps ideas shine without getting in the way.`,
-    approach: `Story-first presentation design:
-• Focus on narrative structure
-• Clean, confident typography
-• Slides that support speaking, not replace it`,
-    solution: `A presentation platform for creating compelling pitch decks that get to the point.
-
-Live at pitches.wokegod.world`,
-    results: [
-      'Pitch presentation platform live',
-      'Used for actual client pitches',
-      'Framework for story-driven presenting'
-    ],
-    gallery: []
   }
 ]
 
