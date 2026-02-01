@@ -31,12 +31,15 @@ const CaseStudyCard = ({ slug, title, client, category, thumbnail, index }: Case
       >
         {/* Image */}
         <div className="relative overflow-hidden aspect-[16/10] bg-light-300 mb-8">
-          {/* Placeholder - replace with actual images */}
-          <div className="absolute inset-0 bg-gradient-to-br from-light-200 to-light-300" />
+          <img 
+            src={thumbnail} 
+            alt={title}
+            className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+          />
           
           {/* Number overlay */}
           <div className="absolute bottom-6 right-6">
-            <span className="text-6xl md:text-7xl font-display font-bold text-dark-900/5 group-hover:text-dark-900/10 transition-colors duration-500">
+            <span className="text-6xl md:text-7xl font-display font-bold text-white/20 group-hover:text-white/30 transition-colors duration-500 drop-shadow-lg">
               {String(index + 1).padStart(2, '0')}
             </span>
           </div>

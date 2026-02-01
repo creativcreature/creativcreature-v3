@@ -70,12 +70,16 @@ const CaseStudy = () => {
       {/* Hero Image */}
       <section className="px-6 md:px-12 mb-20">
         <motion.div 
-          className="max-w-7xl mx-auto aspect-[16/9] bg-light-300"
+          className="max-w-7xl mx-auto aspect-[16/9] bg-light-300 overflow-hidden"
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          {/* Image placeholder */}
+          <img 
+            src={study.heroImage} 
+            alt={study.title}
+            className="w-full h-full object-cover"
+          />
         </motion.div>
       </section>
 
@@ -128,18 +132,27 @@ const CaseStudy = () => {
       </section>
 
       {/* Gallery */}
-      <section className="px-6 md:px-12 mb-20">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {study.gallery.slice(0, 4).map((_, i) => (
-              <div 
-                key={i}
-                className={`aspect-[4/3] bg-light-300 ${i === 0 ? 'md:col-span-2 md:aspect-[16/9]' : ''}`}
-              />
-            ))}
+      {study.gallery.length > 0 && (
+        <section className="px-6 md:px-12 mb-20">
+          <div className="max-w-7xl mx-auto">
+            <h2 className="text-sm tracking-wider text-dark-600 uppercase mb-10">Gallery</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {study.gallery.map((image, i) => (
+                <div 
+                  key={i}
+                  className={`aspect-[4/3] bg-light-300 overflow-hidden ${i === 0 ? 'md:col-span-2 md:aspect-[16/9]' : ''}`}
+                >
+                  <img 
+                    src={image} 
+                    alt={`${study.title} - Image ${i + 1}`}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              ))}
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      )}
 
       {/* Solution */}
       <section className="px-6 md:px-12 mb-20">
